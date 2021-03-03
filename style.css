@@ -264,11 +264,13 @@ h5 {
   display: block;
   background: grey;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .restaurants .map .rest-text .like .fa-heart:hover {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
