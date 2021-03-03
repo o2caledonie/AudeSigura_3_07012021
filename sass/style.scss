@@ -9,7 +9,8 @@ $linear-gradient:linear-gradient(170deg,$secondary-color, $primary-color);
     font-family:'Roboto', sans-serif;
 }
 
-body{
+
+body {
   display:block;
   margin:0;
   width:100%;
@@ -76,7 +77,84 @@ h5{
     color: $grey;
 }
 
+.loader-container{
+    display:block;
+    position: absolute;
+    margin:0;
+    width:100%;
+    height:250%;
+    background: linear-gradient(to right, $secondary-color, $primary-color);
+    animation: 3s linear 3s 1 forwards hide;
 
+   
+
+    .loader {
+        animation:spin 1s infinite linear;
+        border:solid 2vmin transparent;
+        border-radius:50%;
+        border-right-color:#9356dc;
+        border-top-color:#9356dc;
+        box-sizing:border-box;
+        height:20vmin;
+        left:calc(50% - 10vmin);
+        position:fixed;
+        top:calc(50% - 10vmin);
+        width:20vmin;
+        z-index:1;
+        &:before {
+        animation:spin 2s infinite linear;
+        border:solid 2vmin transparent;
+        border-radius:50%;
+        border-right-color:#ff79da;
+        border-top-color:#ff79da;
+        box-sizing:border-box;
+        content:"";
+        height:16vmin;
+        left:0;
+        position:absolute;
+        top:0;
+        width:16vmin;
+        }
+        &:after {
+        animation:spin 3s infinite linear;
+        border:solid 2vmin transparent;
+        border-radius:50%;
+        border-right-color:#99e2d0;
+        border-top-color:#99e2d0;
+        box-sizing:border-box;
+        content:"";
+        height:12vmin;
+        left:2vmin;
+        position:absolute;
+        top:2vmin;
+        width:12vmin;
+        }
+    }
+    
+    @keyframes spin {
+        100% {
+        transform:rotate(360deg);
+        }
+    }
+
+    @keyframes hide {
+        0% {
+            opacity: 1;
+        }
+        
+        100% {
+            opacity: 0;
+        }
+      }
+  
+
+}
+
+
+  
+
+ 
+  
 // Header
 
 .header {
@@ -274,8 +352,9 @@ h5{
                 }
 
                 .new{
-                    position:absolute;
-                    top:60px;
+                    display:block;
+                    position:relative;
+                    top:-250px;
                     right:16px;
                     background-color: $third-color;
                     color:darken($third-color,40);
