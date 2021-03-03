@@ -319,13 +319,14 @@ h5{
                         display: block;
                         background: grey;
                         -webkit-background-clip: text;
+                        background-clip: text;
                         -webkit-text-fill-color: transparent;
                       
                       &:hover {
                         background: -webkit-linear-gradient($primary-color, $secondary-color);
                         -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent; 
                       }
                     }
                 }
