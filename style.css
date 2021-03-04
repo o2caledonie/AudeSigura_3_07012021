@@ -76,6 +76,7 @@ h5 {
   height: 250%;
   background: linear-gradient(to right, #FF79DA, #9356DC);
   animation: 3s linear 3s 1 forwards hide;
+  z-index: 2;
 }
 .loader-container .loader {
   animation: spin 1s infinite linear;
@@ -89,7 +90,7 @@ h5 {
   position: fixed;
   top: calc(50% - 10vmin);
   width: 20vmin;
-  z-index: 1;
+  z-index: 2;
 }
 .loader-container .loader:before {
   animation: spin 2s infinite linear;
@@ -290,15 +291,15 @@ h5 {
   margin-top: -2.9em;
 }
 .restaurants .map .rest-img .new {
-  display: block;
-  position: relative;
-  top: -250px;
-  right: 16px;
+  position: absolute;
+  z-index: 1;
   background-color: #99E2D0;
   color: #278870;
   padding: 0.4em 0.8em 0.3em;
   font-size: 15px;
   box-shadow: 8px 8px 10px -5px #000;
+  margin-top: 10px;
+  margin-left: 230px;
 }
 .restaurants .map .rest-text {
   display: flex;
