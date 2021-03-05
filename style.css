@@ -291,31 +291,31 @@ h5 {
   flex-direction: column;
 }
 .restaurants .map .rest-text .like {
-  margin: 0 0.5em 0.4em;
+  margin: 0;
+  position: relative;
+  min-width: 32px;
+  min-height: 32px;
 }
-.restaurants .map .rest-text .like .fas::before {
-  display: none;
+.restaurants .map .rest-text .like i {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.restaurants .map .rest-text .like:hover .fas::before {
-  display: inline;
-}
-.restaurants .map .rest-text .like:hover .far::before {
-  display: none;
+.restaurants .map .rest-text .like .fas {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  clip-path: circle(0%);
+  transition: all 0.8s;
 }
 .restaurants .map .rest-text .like .fa-heart {
   font-size: 32px;
-  color: #9356DC;
   display: block;
-  background: grey;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #747373;
 }
-.restaurants .map .rest-text .like .fa-heart:hover {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.restaurants .map .rest-text .like:hover .fas {
+  clip-path: circle(100%);
 }
 
 .footer {
