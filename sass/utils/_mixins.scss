@@ -1,0 +1,9 @@
+@mixin shadow($shadow-spread: -4px){
+    box-shadow: 3px 3px 15px $shadow-spread $grey;
+}
+
+@mixin flex-wrap($content:center){
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: $content;
+}

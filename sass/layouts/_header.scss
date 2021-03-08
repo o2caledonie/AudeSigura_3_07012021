@@ -1,0 +1,16 @@
+
+
+// Header
+
+.header {
+    @include flex-wrap;
+    padding:1rem;
+    
+
+    .logo {
+    display:block;
+        img{
+        width:170px;
+        }
+    }
+}
