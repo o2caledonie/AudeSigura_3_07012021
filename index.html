@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 </head>
-
 
 <body>
 
@@ -58,12 +56,17 @@
                 </div>
 
                 <div class="presentation-subtitle">
-                    <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 </div>
 
-                <button type="submit" class="explore">
-                    <span class="button-text">Explorer nos restaurants</span>
-                </button>
+                <a href="#restaurants">
+
+                    <button class="colored-btn" type="submit">
+                        <span class="button-text">Explorer nos restaurants</span>
+                    </button>
+
+                </a>
+
 
             </div>
 
@@ -71,8 +74,8 @@
 
             <div class="functioning">
 
-                <div class="title">
-                    <h3>Fonctionnement</h3>
+                <div>
+                    <h2>Fonctionnement</h2>
                 </div>
 
                 <div class="box-container">
@@ -103,11 +106,6 @@
 
                 </div>
 
-
-
-                <!-- <div class="buttons">
-                </div> -->
-
             </div>
 
         </section>
@@ -115,33 +113,32 @@
 
         <!-- Section 2 -->
 
-        <section class=section2>
+        <section id="restaurants">
 
             <!-- Restaurants -->
 
-            <div class="title">
-                <h3>Restaurants</h3>
+            <div>
+                <h2>Restaurants</h2>
             </div>
 
-            <div class="restaurants">
+            <div class="restaurants-container">
 
                 <!-- Restaurant 1 -->
 
                 <a class="rest1 map" href="#">
                         
-                    
                     <div class="rest-img">
                         <span class="new">Nouveau</span>
                         <span class="img-container">
-                            <img class="img-rest" alt="restaurant 1" src="public/img/restaurants/rest1.jpg">                             
+                            <img class="img" alt="restaurant 1" src="public/img/restaurants/rest1.jpg">                             
                         </span>
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>La palette du goût</h4></div>
-                            <div class="rest-location"><h5>Ménimontant</h5></div>
+                            <div class="rest-name"><h3>La palette du goût</h3></div>
+                            <div class="rest-location"><h4>Ménimontant</h4></div>
                         </div>
 
                         <div class="like">
@@ -156,19 +153,18 @@
 
                 <a class="rest2 map" href="#">
                       
-        
                     <div class="rest-img">
                         <span class="new">Nouveau</span>
                         <span class="img-container">
-                            <img class="img-rest" alt="restaurant 2" src="public/img/restaurants/rest2.jpg"> 
+                            <img class="img" alt="restaurant 2" src="public/img/restaurants/rest2.jpg"> 
                         </span>
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>La note enchantée</h4></div>
-                            <div class="rest-location"><h5>Charonne</h5></div>
+                            <div class="rest-name"><h3>La note enchantée</h3></div>
+                            <div class="rest-location"><h4>Charonne</h4></div>
                         </div>
 
                         <div class="like">
@@ -185,15 +181,15 @@
                         
                     <div class="rest-img">
                         <span class="img-container">
-                            <img class="img-rest" alt="restaurant 3" src="public/img/restaurants/rest3.jpg"> 
+                            <img class="img" alt="restaurant 3" src="public/img/restaurants/rest3.jpg"> 
                         </span>
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>À la française</h4></div>
-                            <div class="rest-location"><h5>Cité Rouge</h5></div>
+                            <div class="rest-name"><h3 >À la française</h3></div>
+                            <div class="rest-location"><h4>Cité Rouge</h4></div>
                         </div>
 
                         <div class="like">
@@ -210,15 +206,15 @@
                         
                     <div class="rest-img">
                         <span class="img-container">
-                            <img class="img-rest" alt="restaurant 4" src="public/img/restaurants/rest4.jpg"> 
+                            <img class="img" alt="restaurant 4" src="public/img/restaurants/rest4.jpg"> 
                         </span>
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>Le délice des sens</h4></div>
-                            <div class="rest-location"><h5>Folie-Méricourt</h5></div>
+                            <div class="rest-name"><h3>Le délice des sens</h3></div>
+                            <div class="rest-location"><h4>Folie-Méricourt</h4></div>
                         </div>
 
                         <div class="like">
@@ -241,9 +237,7 @@
 
             <div class=footer>
 
-                <div class="logo-footer">ohmyfood
-                    <!-- <span class="logo-footer"><img src="public/img/logo/ohmyfood.png" alt="white logo ohmyfood"></span> -->
-                </div>
+                <div class="logo-footer">ohmyfood</div>
 
                 <ul>
                     <li class="li1"><a href="#"><span><i class="fas fa-utensils"></i></span>Proposer un restaurant</a></li>
@@ -254,17 +248,9 @@
 
             </div>
         
-    
+        </footer>    
 
 
-        </footer>
-
-        
-    
-
-
-          
-    
-    
 </body>
+
 </html>

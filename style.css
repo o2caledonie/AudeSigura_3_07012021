@@ -5,7 +5,7 @@
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
 }
 
 ul {
@@ -17,6 +17,7 @@ ul {
 li {
   padding-bottom: 0.5em;
   font-weight: 300;
+  color: #ffff;
 }
 li :hover {
   transform: scale(2);
@@ -31,31 +32,41 @@ h1 {
   margin: 0;
 }
 
-h2 {
+p {
   font-size: 18px;
   font-weight: 400;
   margin: 0;
   color: #747373;
 }
 
-h3 {
+h2 {
   font-size: 24px;
   font-weight: 800;
   margin: 0.5em 0 0.5em;
 }
 
-h4 {
+h3 {
   font-size: 18px;
   font-weight: 800;
   margin: 0;
   color: #000;
 }
 
-h5 {
+h4 {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
   color: #747373;
+}
+
+hr {
+  display: block;
+  position: relative;
+  height: 10px;
+  border: none;
+  border-top: 3px solid #99E2D0;
+  width: 45px;
+  margin: 3px 0 5px;
 }
 
 .loader-container {
@@ -101,13 +112,18 @@ h5 {
 }
 
 .header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   padding: 1rem;
+  text-align: center;
 }
 .header .logo {
   display: block;
+}
+.header .logo i {
+  font-size: 1.2em;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  cursor: pointer;
 }
 .header .logo img {
   width: 170px;
@@ -115,7 +131,7 @@ h5 {
 
 .footer {
   background-color: #000;
-  padding: 1.8em;
+  padding: 1.5em;
 }
 .footer .logo-footer {
   color: #fff;
@@ -182,25 +198,6 @@ body {
   text-align: center;
   margin: 1em 0 1em;
 }
-.presentation .explore {
-  margin: 1em 0 3em;
-  height: 45px;
-  border: none;
-  border-radius: 20px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  box-shadow: 0 4px 15px -4px #747373;
-  cursor: pointer;
-}
-.presentation .explore:hover {
-  filter: brightness(112%);
-  box-shadow: 0px 4px 10px 1px #747373;
-}
-.presentation .button-text {
-  color: #fff;
-  padding: 1em;
-  font-weight: 600;
-  font-size: 16px;
-}
 
 .functioning {
   background-color: #fff;
@@ -249,18 +246,17 @@ body {
   font-size: 1.3em;
 }
 
-.section2 {
+#restaurants {
   background-color: #f3f3f3;
   padding: 2em 1.5em 2em;
 }
-
-.restaurants {
+#restaurants .restaurants-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0 auto 0;
 }
-.restaurants .map {
+#restaurants .restaurants-container .map {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -271,20 +267,20 @@ body {
   border-radius: 20px;
   margin: 1em auto 1.5em;
 }
-.restaurants .map .rest-img {
+#restaurants .restaurants-container .map .rest-img {
   width: 100%;
   height: 72%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   overflow: hidden;
 }
-.restaurants .map .rest-img .img-container {
+#restaurants .restaurants-container .map .rest-img .img-container {
   display: block;
   position: relative;
   width: 324px;
   height: 300px;
 }
-.restaurants .map .rest-img .img-rest {
+#restaurants .restaurants-container .map .rest-img .img {
   display: block;
   position: relative;
   width: 100%;
@@ -292,7 +288,7 @@ body {
   object-fit: cover;
   margin-top: -2.9em;
 }
-.restaurants .map .rest-img .new {
+#restaurants .restaurants-container .map .rest-img .new {
   position: absolute;
   z-index: 1;
   background-color: #99E2D0;
@@ -303,7 +299,7 @@ body {
   margin-top: 10px;
   margin-left: 230px;
 }
-.restaurants .map .rest-text {
+#restaurants .restaurants-container .map .rest-text {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -312,22 +308,43 @@ body {
   width: 100%;
   height: 28%;
 }
-.restaurants .map .rest-text .rest-details {
+#restaurants .restaurants-container .map .rest-text .rest-details {
   display: flex;
   flex-direction: column;
 }
-.restaurants .map .rest-text .like {
+
+.colored-btn {
+  margin: 1em 0 3em;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0 4px 15px -4px #747373;
+  cursor: pointer;
+}
+.colored-btn .button-text {
+  color: #fff;
+  padding: 1em;
+  font-weight: 600;
+  font-size: 16px;
+}
+.colored-btn:hover {
+  filter: brightness(112%);
+  box-shadow: 0px 4px 10px 1px #747373;
+}
+
+.like {
   margin: 0;
   position: relative;
-  min-width: 32px;
-  min-height: 32px;
+  min-width: 28px;
+  min-height: 28px;
 }
-.restaurants .map .rest-text .like i {
+.like i {
   position: absolute;
   top: 0;
   left: 0;
 }
-.restaurants .map .rest-text .like .fas {
+.like .fas {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
@@ -335,13 +352,93 @@ body {
   clip-path: circle(0%);
   transition: all 0.8s;
 }
-.restaurants .map .rest-text .like .fa-heart {
-  font-size: 32px;
+.like .fa-heart {
+  font-size: 28px;
   display: block;
   color: #747373;
 }
-.restaurants .map .rest-text .like:hover .fas {
+.like:hover .fas {
   clip-path: circle(100%);
+}
+
+.img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: #f3f3f3;
+  padding: 2em 1.2em 2em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+  margin-top: -40px;
+  z-index: 20;
+  position: relative;
+}
+.menu .title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 0.5em;
+}
+.menu .title .name {
+  font-family: "shrikhand", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+.menu .dish {
+  padding-top: 2em;
+}
+.menu .dish .dish-type {
+  font-size: 18px;
+}
+.menu .dish .choices {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.menu .dish .choices .item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-shadow: 3px 3px 15px -4px #747373;
+  text-align: left;
+  height: 60px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 1em 0 0 0;
+  border: none;
+  padding: 0 1.2em 0 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .dish .choices .item .item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  padding: 0.5em 0 0.5em;
+  width: 270px;
+  max-height: 55px;
+}
+.menu .dish .choices .item .price {
+  margin: 0;
+  position: relative;
+  align-self: flex-end;
+  padding-bottom: 0.6em;
+  margin-left: 0.5em;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

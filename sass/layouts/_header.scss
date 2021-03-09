@@ -3,12 +3,22 @@
 // Header
 
 .header {
-    @include flex-wrap;
     padding:1rem;
-    
+    text-align: center;
 
     .logo {
     display:block;
+
+
+        i{
+            font-size: 1.2em;
+            position:fixed;
+            top:20px;
+            left: 30px;
+            cursor:pointer;
+
+        }  
+              
         img{
         width:170px;
         }

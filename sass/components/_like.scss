@@ -1,0 +1,33 @@
+.like{
+    margin:0;
+    position:relative;
+    min-width: 28px;
+    min-height: 28px;
+
+    i{
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    .fas {
+        background: linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        clip-path: circle(0%);
+        transition: all .8s;
+    }
+
+    .fa-heart{
+        font-size: 28px;
+        display: block;
+        color: $grey;
+
+    }
+
+    &:hover .fas{
+        clip-path: circle(100%);
+    }
+
+}
