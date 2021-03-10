@@ -51,7 +51,11 @@ h3 {
     font-size: 18px;
     font-weight: 800;
     margin:0;
+    padding:0;
     color:#000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
@@ -59,7 +63,12 @@ h4{
     font-size: 16px;
     font-weight: 400;
     margin:0;
+    padding:0;
     color: $grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 hr{
