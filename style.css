@@ -376,8 +376,7 @@ body {
 .img-container {
   position: relative;
   width: 100%;
-  margin-top: 0px;
-  height: auto;
+  height: 250px;
 }
 .img-container .img {
   display: block;
@@ -385,6 +384,9 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.img-container .img_2 {
+  top: -100px;
 }
 
 .menu {

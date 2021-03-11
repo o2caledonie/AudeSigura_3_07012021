@@ -8,11 +8,10 @@
     justify-content: $content;
 }
 
-@mixin img-container($margin-top:0px){
+@mixin img-container{
     position:relative;
     width:100%;
-    margin-top:0px;
-    height:auto;
+    height:250px;
 }
 
 @mixin img{
