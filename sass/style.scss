@@ -79,12 +79,12 @@
                 @include shadow;
                 height: 60px;
                 width:100%;
-                max-width: 400px;
+                max-width: 360px;
                 background-color: #fff;
                 border-radius: 15px;
                 margin:1em 0 0 0;
                 border: none;
-                padding: 0 0 0 .8em;
+                padding: 0;
                 cursor: pointer;
                 overflow: hidden; 
                 animation: fadein 1.5s backwards;
@@ -106,34 +106,35 @@
 
                 .item-details{
                     display:block;
-                    width: 100%;
+                    width: 83%;
                     text-align: left;
-                    overflow:hidden !important;
-                    text-overflow: ellipsis !important;
-                    white-space: nowrap !important;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding-left:.8em;                
                 }
+
 
                 .slider{
                     display: flex;
                     height:100%;
-                    width:60px;
+                    width:fit-content;
                     padding:0;
-                    margin: 0;
-                    transition: transform .6s;
-                    transform: translate(0px, 0px);
-
+                    margin-right:-120px;
+                    transition: .6s;
+             
                     .price{
-                        display:inline-block;
                         font-size: 15px;
                         font-weight: 600;
                         background-color: #fff;
                         padding:2.1em 1.2em 0em;
+                        width:55%;
                     }
 
                     .checkbox{
-                        display: inline-block;
                         height:100%;
-                        width:60px;
+                        width:45%;
+                        padding:1.25em 1em;
                         background-color: $third-color;
                         text-align: center;
                         border-top-right-radius: 15px;
@@ -142,7 +143,6 @@
                         
 
                         .fas{
-                            padding:1em;
                             font-size: 20px;
                             color: #fff;
                             transition: transform .7s;
@@ -154,7 +154,7 @@
                 }
 
                 &:hover .slider{
-                    transform: translate(-60px, 0px);
+                    margin-right:0px;
 
           
                     .fas{
