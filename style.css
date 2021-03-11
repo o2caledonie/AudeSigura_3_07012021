@@ -428,6 +428,42 @@ body {
   padding: 0 0 0 0.8em;
   cursor: pointer;
   overflow: hidden;
+  animation: fadein 1.5s backwards;
+}
+.menu .dish .choices .item--1 {
+  animation-delay: 0.2222222222s;
+}
+.menu .dish .choices .item--2 {
+  animation-delay: 0.4444444444s;
+}
+.menu .dish .choices .item--3 {
+  animation-delay: 0.6666666667s;
+}
+.menu .dish .choices .item--4 {
+  animation-delay: 0.8888888889s;
+}
+.menu .dish .choices .item--5 {
+  animation-delay: 1.1111111111s;
+}
+.menu .dish .choices .item--6 {
+  animation-delay: 1.3333333333s;
+}
+.menu .dish .choices .item--7 {
+  animation-delay: 1.5555555556s;
+}
+.menu .dish .choices .item--8 {
+  animation-delay: 1.7777777778s;
+}
+.menu .dish .choices .item--9 {
+  animation-delay: 2s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .menu .dish .choices .item .item-details {
   display: block;
@@ -452,7 +488,8 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-right: -60px;
-  transition: 0.6s;
+  transition: transform 0.6s;
+  transform: translate(0px, 0px);
 }
 .menu .dish .choices .item .slider .fas {
   padding: 1em;
@@ -461,7 +498,7 @@ body {
   transition: transform 0.7s;
 }
 .menu .dish .choices .item:hover .slider {
-  margin-right: 0px;
+  transform: translate(-60px, 0px);
 }
 .menu .dish .choices .item:hover .slider .fas {
   transform: rotate(360deg);

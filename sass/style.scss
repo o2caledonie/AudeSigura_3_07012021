@@ -8,6 +8,9 @@
 @import "./components/button";
 @import "./components/like";
 
+$num-item: 9;
+$anim-delay: 2s / $num-item;
+
 .img{
     @include img;
 }
@@ -63,6 +66,21 @@
                 padding: 0 0 0 .8em;
                 cursor: pointer;
                 overflow: hidden; 
+                animation: fadein 1.5s backwards;
+                @for $i from 1 through $num-item {
+                    &--#{$i} {
+                        animation-delay: $anim-delay * $i;
+                    }
+                }
+
+            @keyframes fadein{
+                0%{
+                    opacity:0;
+                }
+                100%{
+                    opacity:1;
+                }
+            }
                
 
                 .item-details{
@@ -90,7 +108,8 @@
                     border-top-right-radius: 15px;
                     border-bottom-right-radius: 15px;
                     margin-right: -60px;
-                    transition: .6s;
+                    transition: transform .6s;
+                    transform: translate(0px, 0px);
                     
 
                     .fas{
@@ -104,13 +123,16 @@
                 }
 
                 &:hover .slider{
-                    margin-right: 0px;
+                    transform: translate(-60px, 0px);
+
           
                     .fas{
                         transform: rotate(360deg);
                 }
                 
             }
+
+            
 
             
            
