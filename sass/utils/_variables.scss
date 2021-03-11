@@ -3,3 +3,7 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $third-color: #99E2D0;
 $linear-gradient:linear-gradient(170deg,$secondary-color, $primary-color);
+$num-item: 10;
+$anim-delay1: 2s / $num-item;
+$num-dish:3;
+$anim-delay2: 1.5s / $num-dish;

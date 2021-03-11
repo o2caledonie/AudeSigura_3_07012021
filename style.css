@@ -120,17 +120,20 @@ hr {
 }
 
 .header {
+  position: relative;
   padding: 1rem;
+  background-color: #fff;
   text-align: center;
+  z-index: 20;
 }
 .header .logo {
   display: block;
 }
 .header .logo i {
   font-size: 1.2em;
-  position: fixed;
+  position: absolute;
   top: 20px;
-  left: 30px;
+  left: 20px;
   cursor: pointer;
 }
 .header .logo img {
@@ -138,6 +141,7 @@ hr {
 }
 
 .footer {
+  width: 100%;
   background-color: #000;
   padding: 1.5em;
 }
@@ -369,7 +373,13 @@ body {
   clip-path: circle(100%);
 }
 
-.img {
+.img-container {
+  position: relative;
+  width: 100%;
+  margin-top: 0px;
+  height: auto;
+}
+.img-container .img {
   display: block;
   position: relative;
   width: 100%;
@@ -380,12 +390,11 @@ body {
 .menu {
   background-color: #f3f3f3;
   padding: 2em 1.2em 2em;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
   width: 100%;
-  margin-top: -40px;
-  z-index: 20;
   position: relative;
+  margin-top: -40px;
 }
 .menu .title {
   display: flex;
@@ -401,6 +410,24 @@ body {
 }
 .menu .dish {
   padding-top: 2em;
+  animation: fadein 1.5s backwards;
+}
+.menu .dish--1 {
+  animation-delay: 0.5s;
+}
+.menu .dish--2 {
+  animation-delay: 1s;
+}
+.menu .dish--3 {
+  animation-delay: 1.5s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .menu .dish .dish-type {
   font-size: 18px;
@@ -431,30 +458,33 @@ body {
   animation: fadein 1.5s backwards;
 }
 .menu .dish .choices .item--1 {
-  animation-delay: 0.2222222222s;
+  animation-delay: 0.2s;
 }
 .menu .dish .choices .item--2 {
-  animation-delay: 0.4444444444s;
+  animation-delay: 0.4s;
 }
 .menu .dish .choices .item--3 {
-  animation-delay: 0.6666666667s;
+  animation-delay: 0.6s;
 }
 .menu .dish .choices .item--4 {
-  animation-delay: 0.8888888889s;
+  animation-delay: 0.8s;
 }
 .menu .dish .choices .item--5 {
-  animation-delay: 1.1111111111s;
+  animation-delay: 1s;
 }
 .menu .dish .choices .item--6 {
-  animation-delay: 1.3333333333s;
+  animation-delay: 1.2s;
 }
 .menu .dish .choices .item--7 {
-  animation-delay: 1.5555555556s;
+  animation-delay: 1.4s;
 }
 .menu .dish .choices .item--8 {
-  animation-delay: 1.7777777778s;
+  animation-delay: 1.6s;
 }
 .menu .dish .choices .item--9 {
+  animation-delay: 1.8s;
+}
+.menu .dish .choices .item--10 {
   animation-delay: 2s;
 }
 @keyframes fadein {

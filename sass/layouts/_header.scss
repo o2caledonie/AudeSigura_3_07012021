@@ -3,8 +3,11 @@
 // Header
 
 .header {
+    position: relative;
     padding:1rem;
+    background-color: #fff;
     text-align: center;
+    z-index:20;
 
     .logo {
     display:block;
@@ -12,9 +15,9 @@
 
         i{
             font-size: 1.2em;
-            position:fixed;
+            position:absolute;
             top:20px;
-            left: 30px;
+            left: 20px;
             cursor:pointer;
 
         }  

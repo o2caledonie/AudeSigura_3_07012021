@@ -8,22 +8,24 @@
 @import "./components/button";
 @import "./components/like";
 
-$num-item: 9;
-$anim-delay: 2s / $num-item;
+.img-container{
+    @include img-container;
 
-.img{
-    @include img;
+    .img{
+        @include img;
+    }
 }
+
+
 
 .menu{
     background-color: lighten($grey,50);
     padding: 2em 1.2em 2em;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
     width:100%;
-    margin-top:-40px;
-    z-index:20;
     position:relative;
+    margin-top: -40px;
 
     .title{
         @include flex-wrap(space-between);
@@ -39,6 +41,21 @@ $anim-delay: 2s / $num-item;
 
     .dish{
         padding-top:2em;
+        animation: fadein 1.5s backwards;
+        @for $i from 1 through $num-dish {
+            &--#{$i} {
+                animation-delay: $anim-delay2 * $i;
+            }
+        }
+
+    @keyframes fadein{
+        0%{
+            opacity:0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
 
         .dish-type{
             font-size: 18px;
@@ -69,7 +86,7 @@ $anim-delay: 2s / $num-item;
                 animation: fadein 1.5s backwards;
                 @for $i from 1 through $num-item {
                     &--#{$i} {
-                        animation-delay: $anim-delay * $i;
+                        animation-delay: $anim-delay1 * $i;
                     }
                 }
 
@@ -128,16 +145,16 @@ $anim-delay: 2s / $num-item;
           
                     .fas{
                         transform: rotate(360deg);
-                }
+                    }
                 
+                }
+
             }
 
-            
-
-            
-           
         }
+
     }
-}
 
 }
+
+

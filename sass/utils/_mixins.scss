@@ -8,6 +8,13 @@
     justify-content: $content;
 }
 
+@mixin img-container($margin-top:0px){
+    position:relative;
+    width:100%;
+    margin-top:0px;
+    height:auto;
+}
+
 @mixin img{
     display:block;
     position:relative;
