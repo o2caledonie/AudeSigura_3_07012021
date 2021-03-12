@@ -31,7 +31,7 @@
     position:relative;
     margin-top: -40px;
 
-    .title{
+    .restaurant{
         @include flex-wrap(space-between);
         align-items: baseline;
         padding-right: .5em;
@@ -44,6 +44,7 @@
     }
 
     .dish{
+        max-width: 400px;
         padding-top:2em;
         animation: fadein 1.5s backwards;
         @for $i from 1 through $num-dish {

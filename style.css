@@ -19,6 +19,11 @@ li {
   font-weight: 300;
   color: #ffff;
 }
+@media (min-width: 600px) {
+  li {
+    font-size: 18px;
+  }
+}
 li :hover {
   transform: scale(2);
   transition: 0.4s;
@@ -32,17 +37,32 @@ p {
   margin: 0;
   color: #747373;
 }
+@media (min-width: 600px) {
+  p {
+    font-size: 20px;
+  }
+}
 
 h1 {
   font-size: 24px;
   font-weight: 800;
   margin: 0;
 }
+@media (min-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+}
 
 h2 {
   font-size: 24px;
   font-weight: 800;
   margin: 0.5em 0 0.5em;
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 26px;
+  }
 }
 
 .map-title {
@@ -55,6 +75,16 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (min-width: 600px) {
+  .map-title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .map-title {
+    font-size: 17px;
+  }
+}
 
 .map-subtitle {
   font-size: 16px;
@@ -65,6 +95,16 @@ h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: 600px) {
+  .map-subtitle {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .map-subtitle {
+    font-size: 15px;
+  }
 }
 
 hr {
@@ -124,7 +164,11 @@ hr {
   padding: 1rem;
   background-color: #fff;
   text-align: center;
-  z-index: 20;
+}
+@media (min-width: 768px) {
+  .header {
+    text-align: left;
+  }
 }
 .header .logo {
   display: block;
@@ -139,11 +183,23 @@ hr {
 .header .logo img {
   width: 170px;
 }
+@media (min-width: 768px) {
+  .header .logo img {
+    width: 150px;
+    margin: 0 1.5em;
+  }
+}
 
 .footer {
   width: 100%;
   background-color: #000;
   padding: 1.5em;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .footer {
+    padding: 2em 3em;
+  }
 }
 .footer .logo-footer {
   color: #fff;
@@ -152,12 +208,22 @@ hr {
   font-size: 20px;
   padding-bottom: 1.4em;
 }
+@media (min-width: 600px) {
+  .footer .logo-footer {
+    font-size: 24px;
+  }
+}
 .footer .li1 {
   font-weight: 500;
 }
 .footer .li1 .fas {
   font-size: 0.9em;
   padding-right: 0.8em;
+}
+@media (min-width: 600px) {
+  .footer .li1 .fas {
+    font-size: 1em;
+  }
 }
 
 body {
@@ -177,6 +243,15 @@ body {
   background-color: #e6e6e6;
   box-shadow: inset 0 15px 15px -20px #747373;
 }
+@media (min-width: 768px) {
+  .location-container {
+    width: 30%;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 3px 3px 15px -4px #747373;
+    margin: 1em;
+  }
+}
 .location-container form {
   display: flex;
   width: 180px;
@@ -185,6 +260,11 @@ body {
 .location-container form .icon-map {
   padding: 0 0.5em 0;
 }
+@media (min-width: 600px) {
+  .location-container form .icon-map {
+    font-size: 18px;
+  }
+}
 .location-container form input {
   display: block;
   border: none;
@@ -192,6 +272,11 @@ body {
   background-color: transparent;
   font-size: 16px;
   font-weight: 600;
+}
+@media (min-width: 600px) {
+  .location-container form input {
+    font-size: 18px;
+  }
 }
 
 .presentation {
@@ -202,27 +287,55 @@ body {
   margin: 0;
   background-color: #f3f3f3;
 }
+@media (min-width: 600px) {
+  .presentation {
+    padding: 1.5em 3em;
+  }
+}
+@media (min-width: 768px) {
+  .presentation {
+    border-radius: 30px;
+    margin: 0 0.5em;
+  }
+}
 .presentation .presentation-title {
   text-align: center;
-  padding: 1em 3em 0;
+  padding: 1em 2.5em 0;
 }
 .presentation .presentation-subtitle {
   text-align: center;
   margin: 1em 0 1em;
 }
 
-.functioning {
+#functioning {
   background-color: #fff;
-  padding: 2em 1.5em 2em;
+  padding: 2em 1.5em;
 }
-.functioning .box-container {
+@media (min-width: 768px) {
+  #functioning {
+    padding: 0;
+    margin: 0 2em;
+  }
+}
+#functioning .box-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 1.5em;
   padding-left: 0.6em;
 }
-.functioning .box-container .box {
+@media (min-width: 600px) {
+  #functioning .box-container {
+    padding: 0 2em;
+  }
+}
+@media (min-width: 768px) {
+  #functioning .box-container {
+    padding: 0;
+    justify-content: space-evenly;
+  }
+}
+#functioning .box-container .box {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -235,14 +348,38 @@ body {
   margin: 0 auto 1.8em;
   cursor: pointer;
 }
-.functioning .box-container .box:hover {
+@media (min-width: 600px) {
+  #functioning .box-container .box {
+    width: 360px;
+    height: 80px;
+    border-radius: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #functioning .box-container .box {
+    background: #fff;
+    width: 220px;
+    height: 70px;
+  }
+}
+@media (min-width: 600px) {
+  #functioning .box-container .box > * {
+    font-size: 18px;
+  }
+}
+@media (min-width: 600px) {
+  #functioning .box-container .box > * {
+    font-size: 15px;
+  }
+}
+#functioning .box-container .box:hover {
   background: #e4d5f6;
   box-shadow: 3px 3px 15px -1px #747373;
 }
-.functioning .box-container .box:hover:hover .fas {
+#functioning .box-container .box:hover:hover .fas {
   color: #9356DC;
 }
-.functioning .box-container .box .step-number {
+#functioning .box-container .box .step-number {
   background: #9356DC;
   color: #fff;
   font-weight: 400;
@@ -250,23 +387,49 @@ body {
   margin-left: -10px;
   padding: 0.25em 0.5em 0.25em;
 }
-.functioning .box-container .box .icon {
-  padding: 0 1.5em 0;
+#functioning .box-container .box .icon {
+  padding: 0 1.5em;
 }
-.functioning .box-container .box .icon .fas {
+@media (min-width: 600px) {
+  #functioning .box-container .box .icon {
+    padding: 0 0.5em;
+  }
+}
+#functioning .box-container .box .icon .fas {
   color: #747373;
   font-size: 1.3em;
 }
 
+@media (min-width: 600px) {
+  .section-title {
+    margin: 0 4em 0;
+    text-align: center;
+  }
+}
+
 #restaurants {
   background-color: #f3f3f3;
-  padding: 2em 1.5em 2em;
+  padding: 2em 1.5em;
+}
+@media (min-width: 768px) {
+  #restaurants {
+    margin: 1.5em 2em;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    padding: 2em 0.2;
+  }
 }
 #restaurants .restaurants-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0 auto 0;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #restaurants .restaurants-container {
+    justify-content: space-evenly;
+  }
 }
 #restaurants .restaurants-container .map {
   display: flex;
@@ -279,6 +442,20 @@ body {
   border-radius: 20px;
   margin: 1em auto 1.5em;
 }
+@media (min-width: 600px) {
+  #restaurants .restaurants-container .map {
+    margin: 1em 0.5em 1.5em;
+    max-width: 370px;
+    height: 260px;
+  }
+}
+@media (min-width: 768px) {
+  #restaurants .restaurants-container .map {
+    margin: 1em 0.5em 1.5em;
+    max-width: 290px;
+    height: 210px;
+  }
+}
 #restaurants .restaurants-container .map .rest-img {
   width: 100%;
   height: 72%;
@@ -289,7 +466,7 @@ body {
 #restaurants .restaurants-container .map .rest-img .img-container {
   display: block;
   position: relative;
-  width: 324px;
+  width: 100%;
   height: 300px;
 }
 #restaurants .restaurants-container .map .rest-img .img {
@@ -298,18 +475,42 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin-top: -2.9em;
+  margin-top: -3.3em;
+}
+@media (min-width: 600px) {
+  #restaurants .restaurants-container .map .rest-img .img {
+    margin-top: -4em;
+  }
+}
+@media (min-width: 768px) {
+  #restaurants .restaurants-container .map .rest-img .img {
+    margin-top: -2.5em;
+  }
 }
 #restaurants .restaurants-container .map .rest-img .new {
-  position: absolute;
+  position: relative;
   z-index: 1;
   background-color: #99E2D0;
   color: #278870;
   padding: 0.4em 0.8em 0.3em;
   font-size: 15px;
   box-shadow: 8px 8px 10px -5px #000;
-  margin-top: 10px;
-  margin-left: 230px;
+  top: 16px;
+  left: 230px;
+}
+@media (min-width: 600px) {
+  #restaurants .restaurants-container .map .rest-img .new {
+    font-size: 16px;
+    top: 20px;
+    left: 265px;
+  }
+}
+@media (min-width: 768px) {
+  #restaurants .restaurants-container .map .rest-img .new {
+    font-size: 14px;
+    top: 15px;
+    left: 200px;
+  }
 }
 #restaurants .restaurants-container .map .rest-text {
   display: flex;
@@ -326,7 +527,8 @@ body {
 }
 
 .colored-btn {
-  margin: 1em 0 3em;
+  display: block;
+  margin: 1em 2em 3em;
   height: 45px;
   border: none;
   border-radius: 20px;
@@ -334,11 +536,22 @@ body {
   box-shadow: 0 4px 15px -4px #747373;
   cursor: pointer;
 }
+@media (min-width: 600px) {
+  .colored-btn {
+    height: 65px;
+    border-radius: 30px;
+  }
+}
 .colored-btn .button-text {
   color: #fff;
   padding: 1em;
   font-weight: 600;
   font-size: 16px;
+}
+@media (min-width: 600px) {
+  .colored-btn .button-text {
+    font-size: 18px;
+  }
 }
 .colored-btn:hover {
   filter: brightness(112%);
@@ -350,6 +563,12 @@ body {
   position: relative;
   min-width: 28px;
   min-height: 28px;
+}
+@media (min-width: 600px) {
+  .like {
+    margin-right: 0.6em;
+    margin-bottom: 0.3em;
+  }
 }
 .like i {
   position: absolute;
@@ -368,6 +587,12 @@ body {
   font-size: 28px;
   display: block;
   color: #747373;
+}
+@media (min-width: 600px) {
+  .like .fa-heart {
+    font-size: 30px;
+    margin-right: 4em;
+  }
 }
 .like:hover .fas {
   clip-path: circle(100%);
@@ -398,19 +623,20 @@ body {
   position: relative;
   margin-top: -40px;
 }
-.menu .title {
+.menu .restaurant {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: baseline;
   padding-right: 0.5em;
 }
-.menu .title .name {
+.menu .restaurant .name {
   font-family: "shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 500;
 }
 .menu .dish {
+  max-width: 400px;
   padding-top: 2em;
   animation: fadein 1.5s backwards;
 }

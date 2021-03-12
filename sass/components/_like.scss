@@ -4,6 +4,11 @@
     min-width: 28px;
     min-height: 28px;
 
+    @media (min-width: 600px) {
+        margin-right: .6em;
+        margin-bottom: .3em;
+    }
+
     i{
         position:absolute;
         top:0;
@@ -19,11 +24,17 @@
         transition: all .8s;
     }
 
+    
+
     .fa-heart{
         font-size: 28px;
         display: block;
         color: $grey;
 
+    @media (min-width: 600px) {
+        font-size: 30px;
+        margin-right:4em;
+    }
     }
 
     &:hover .fas{
