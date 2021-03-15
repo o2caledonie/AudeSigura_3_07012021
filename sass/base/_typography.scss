@@ -24,6 +24,11 @@ li{
     font-size: 18px;
 }
 
+// @media (min-width: 894px) {
+//     font-size: 22px;
+// }
+
+
     :hover{
         transform:scale(2);
         transition:0.4s;
@@ -42,6 +47,11 @@ p {
     font-size: 20px;
 }
 
+// @media (min-width: 894px) {
+//     font-size: 22px;
+// }
+
+
 }
 
 h1 {
@@ -53,6 +63,10 @@ h1 {
     font-size: 26px;
 }
 
+// @media (min-width: 894px) {
+//     font-size: 30px;
+// }
+
 }
 
 
@@ -63,6 +77,9 @@ h2 {
 
 @media (min-width: 600px) {
     font-size: 26px;
+}
+@media (min-width: 1024px) {
+    margin:0em 1em .5em;
 }
 
 }
@@ -84,7 +101,18 @@ h2 {
 @media (min-width: 768px) {
     font-size: 17px;
 }
-    
+
+@media (min-width: 894px) {
+    font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+    font-size: 17px;
+}
+ 
+@media (min-width: 1400px) {
+    font-size: 20px;
+}
 }
 
 .map-subtitle{
@@ -103,6 +131,18 @@ h2 {
 
 @media (min-width: 768px) {
     font-size: 15px;
+}
+
+@media (min-width: 894px) {
+    font-size: 18px;
+}
+
+@media (min-width: 1200px) {
+    font-size: 15px;
+}
+
+@media (min-width: 1400px) {
+    font-size: 18px;
 }
 }
 

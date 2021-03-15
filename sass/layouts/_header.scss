@@ -12,6 +12,10 @@
     text-align: left;
 }
 
+@media (min-width: 1024px) {
+    max-width: fit-content;
+}
+
     .logo {
     display:block;
 
@@ -32,6 +36,17 @@
             width: 150px;
             margin: 0 1.5em;
         }
+
+        @media (min-width: 894px) {
+            width: 200px;
+            margin: 0 1.5em;
+        }
+
+        @media (min-width: 1024px) {
+            width: 160px;
+            margin: 1em 1.5em;
+        }
+
         }
     }
 }
