@@ -8,9 +8,16 @@
     box-shadow:0 4px 15px -4px $grey;
     cursor:pointer;
 
-@media (min-width: 600px) {
-    height:65px;
-    border-radius: 30px;
+@media (min-width: 768px) {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 1024px) {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 1200px) {
+    margin: 1em 0 4em 4em;
 }
     
     .button-text {
@@ -18,13 +25,8 @@
         padding: 1em;
         font-weight: 600;
         font-size: 16px;
-
-    @media (min-width: 600px) {
-        font-size: 18px;
-    } 
     }  
         
-
     &:hover{
         filter: brightness(112%);
         box-shadow:0px 4px 10px 1px $grey;
