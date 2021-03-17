@@ -522,61 +522,7 @@ body {
                         display:flex;
                         flex-direction: column; 
 
-                        .map-title {
-                            font-size: 18px;
-                            font-weight: 800;
-                            margin:0;
-                            padding:0;
-                            color:#000;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
                         
-                        @media (min-width: 600px) {
-                            font-size: 20px;
-                        }
-                        
-                        @media (min-width: 768px) {
-                            font-size: 18px;
-                        }
-                        
-                        @media (min-width: 894px) {
-                            font-size: 20px;
-                        }
-                        
-                        @media (min-width: 1200px) {
-                            font-size: 18px;
-                        }
-                         
-                        }
-                        
-                        .map-subtitle{
-                            font-size: 16px;
-                            font-weight: 400;
-                            margin:0;
-                            padding:0;
-                            color: $grey;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            
-                        @media (min-width: 600px) {
-                            font-size: 18px;
-                        }
-                        
-                        @media (min-width: 768px) {
-                            font-size: 16px;
-                        }
-                        
-                        @media (min-width: 894px) {
-                            font-size: 18px;
-                        }
-                        
-                        @media (min-width: 1200px) {
-                            font-size: 16px;
-                        }
-                        
-                        }
                     }
                     
 

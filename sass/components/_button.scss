@@ -1,9 +1,9 @@
 .colored-btn {
     display:block;
     margin:1em 2em 3em;
-    height:45px;
+    height:50px;
     border:none;
-    border-radius: 20px;
+    border-radius: 30px;
     background: $linear-gradient; 
     box-shadow:0 4px 15px -4px $grey;
     cursor:pointer;
@@ -25,6 +25,10 @@
         padding: 1em;
         font-weight: 600;
         font-size: 16px;
+
+        &_order {
+            margin: 2em;
+        }
     }  
         
     &:hover{
