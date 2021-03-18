@@ -15,7 +15,10 @@
         @include img;
 
         &_2{
+        
+        @media (min-width: 768px) {
             top: -100px;
+        }
         }
 
     }
