@@ -8,17 +8,17 @@
     justify-content: $content;
 }
 
-@mixin img-container{
-    position:relative;
-    width:100%;
-    height:auto;
-}
+// @mixin img-container{
+//     position:relative;
+//     width:100%;
+//     height:auto;
+// }
 
 @mixin img{
     display:block;
     position:relative;
     width:100%;
-    height:215px;
+    height:245px;
     object-fit: cover;
     z-index:1;
 }

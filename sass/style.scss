@@ -8,32 +8,33 @@
 @import "./components/button";
 @import "./components/like";
 
-.img-container{
-    @include img-container;
+// .img-container{
+//     @include img-container;
 
     .img{
         @include img;
 
-        &_2{
+        // &_2{
         
-        @media (min-width: 768px) {
-            top: -100px;
-        }
-        }
+        // @media (min-width: 768px) {
+        //     top: -100px;
+        // }
+        // }
 
     }
-}
+
 
 .menu-container{
 
-@media (min-width: 600px) {
-    position: relative;
-    display: flex;
-    background-color:#fff;
-    margin: -2em 0 0;
-    width: 100%;
-    z-index:4;
-}
+// @media (min-width: 600px) {
+//     position: relative;
+//     display: flex;
+//     background-color:#fff;
+//     margin: 0;
+//     width: 100%;
+//     z-index:2;
+// }
+
 
 
     .menu{
@@ -47,14 +48,19 @@
         margin-top: -40px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        z-index:2;
 
     @media (min-width: 600px) {
         margin: 2.5em auto;
         width: 100%;
         max-width: 550px;
         border-radius: 35px;
-        
+    }
+
+    @media (min-width: 768px) {
+        margin: 0;
+        max-width: 100%;
+        border-radius: 0px;
     }
         
 
@@ -91,12 +97,17 @@
             }
         }
 
+        @media (min-width: 768px) {
+            max-width: none;
+            width: 100%;
+        }
+
             .dish-type{
                 font-size: 18px;
             }
 
             .choices{
-                @include flex-wrap(space-between);
+                @include flex-wrap(space-evenly);
                 margin: 0;
                 padding:0;
                 width:100%;
@@ -109,10 +120,10 @@
                     @include shadow;
                     height: 60px;
                     width:100%;
-                    max-width: 380px;
+                    max-width: 320px;
                     background-color: #fff;
                     border-radius: 15px;
-                    margin:1em 0 0 0;
+                    margin-top:1em;
                     border: none;
                     padding: 0;
                     cursor: pointer;
@@ -132,6 +143,14 @@
                         opacity:1;
                     }
                 }
+
+                @media (min-width: 768px) {
+                    max-width: 250px;
+                    width: 30%;
+                    margin: 1em .5em 0;
+                    height: 90px;
+                    align-items:stretch;
+                }
                 
 
                     .item-details{
@@ -142,6 +161,10 @@
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         padding-left:.8em;
+
+                    @media (min-width: 768px) {
+                        padding: .75em 0 .75em .8em;
+                    }
                         
                     }
 
@@ -160,6 +183,10 @@
                             background-color: #fff;
                             padding:2.1em 1.2em 0em;
                             width:55%;
+
+                        @media (min-width: 768px) {
+                            padding: 2.1em .5em 0em;
+                        }
                         }
 
                         .checkbox{
