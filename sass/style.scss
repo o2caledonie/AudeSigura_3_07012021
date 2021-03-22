@@ -40,7 +40,7 @@
     .menu{
         position: relative;
         background-color: lighten($grey,50);
-        padding: 2em 1.2em 1em;
+        padding: 2em 1em 1em;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
         width:100%;
@@ -51,17 +51,26 @@
         z-index:2;
 
     @media (min-width: 600px) {
+        align-items: center;
         margin: 2.5em auto;
-        width: 100%;
-        max-width: 550px;
+        width: 90%;
+        max-width: 650px;
         border-radius: 35px;
     }
 
-    @media (min-width: 768px) {
-        margin: 0;
-        max-width: 100%;
-        border-radius: 0px;
+    @media (min-width: 894px) {
+        border-radius:0;
+        margin:0;
+        width:100%;
+        max-width: none;
+        flex-flow: row wrap;
     }
+
+    // @media (min-width: 768px) {
+    //     margin: 0;
+    //     max-width: 100%;
+    //     border-radius: 0px;
+    // }
         
 
 
@@ -69,17 +78,23 @@
             @include flex-wrap(space-between);
             align-items: baseline;
             width:100%;
-            max-width: 360px;
+            max-width: 350px;
+
+        @media (min-width: 894px) {
+            margin: 0 auto;
+            max-width: none;
+            padding: 0 15em;
+        }
 
             .name{
                 font-family: 'shrikhand', sans-serif;
-                font-size: 28px;
+                font-size: 26px;
                 font-weight: 500;
             }
         }
 
         .dish{
-            max-width: 400px;
+            max-width: 600px;
             padding:1.5em 0 .5em;
             animation: fadein 1.5s backwards;
             @for $i from 1 through $num-dish {
@@ -97,17 +112,25 @@
             }
         }
 
-        @media (min-width: 768px) {
-            max-width: none;
-            width: 100%;
+        @media (min-width: 600px) {
+            max-width: 500px;
+        } 
+
+        @media (min-width: 894px) {
+            max-width: 290px;
         }
 
+        // @media (min-width: 768px) {
+        //     max-width: none;
+        //     width: 100%;
+        // }
+
             .dish-type{
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .choices{
-                @include flex-wrap(space-evenly);
+                @include flex-wrap(space-between);
                 margin: 0;
                 padding:0;
                 width:100%;
@@ -115,12 +138,12 @@
 
                 .item{
                     display:flex;
-                    justify-content: stretch;
+                    justify-content: space-between;
                     align-items: center;
                     @include shadow;
                     height: 60px;
                     width:100%;
-                    max-width: 320px;
+                    max-width: 600px;
                     background-color: #fff;
                     border-radius: 15px;
                     margin-top:1em;
@@ -144,37 +167,94 @@
                     }
                 }
 
-                @media (min-width: 768px) {
-                    max-width: 250px;
-                    width: 30%;
-                    margin: 1em .5em 0;
-                    height: 90px;
-                    align-items:stretch;
+                @media (min-width: 894px) {
+                    max-width: 260px;
                 }
+
+                // @media (min-width: 768px) {
+                //     max-width: 250px;
+                //     width: 30%;
+                //     margin: 1em .5em 0;
+                //     height: 90px;
+                // }
                 
 
                     .item-details{
                         display:block;
-                        width: 83%;
                         text-align: left;
                         overflow:hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         padding-left:.8em;
 
-                    @media (min-width: 768px) {
-                        padding: .75em 0 .75em .8em;
-                    }
+                    // @media (min-width: 768px) {
+                    //     padding: .75em 0 .75em .8em;
+                    // }
+
+                        .item-title {
+                            font-size: 18px;
+                            font-weight: 800;
+                            margin:0;
+                            padding:0;
+                            color:#000;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         
-                    }
+                        @media (min-width: 600px) {
+                            font-size: 20px;
+                        }
+                        
+                        // @media (min-width: 768px) {
+                        //     font-size: 18px;
+                        // }
+                        
+                        @media (min-width: 894px) {
+                            font-size: 18px;
+                        }
+                        
+                        @media (min-width: 1200px) {
+                            font-size: 18px;
+                        }
+                        
+                        }
+                        
+                        .item-description{
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin:0;
+                            padding:0;
+                            color: $grey;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            
+                        @media (min-width: 600px) {
+                            font-size: 18px;
+                        }
+                        
+                        // @media (min-width: 768px) {
+                        //     font-size: 16px;
+                        // }
+                        
+                        @media (min-width: 894px) {
+                            font-size: 16px;
+                        }
+                        
+                        @media (min-width: 1200px) {
+                            font-size: 16px;
+                        }
+                        
+                        }
+                            
+                        }
 
 
                     .slider{
                         display: flex;
                         height:100%;
-                        width:fit-content;
                         padding:0;
-                        margin-right:-120px;
+                        margin-right:-60px;
                         transition: .6s;
                 
                         .price{
@@ -184,9 +264,9 @@
                             padding:2.1em 1.2em 0em;
                             width:55%;
 
-                        @media (min-width: 768px) {
-                            padding: 2.1em .5em 0em;
-                        }
+                        // @media (min-width: 768px) {
+                        //     padding: 2.1em .5em 0em;
+                        // }
                         }
 
                         .checkbox{
@@ -228,6 +308,7 @@
         .order {
             margin-top: 2em;
             text-align: center;
+            align-self: center;
         }
 
     }
