@@ -52,17 +52,6 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 800;
-  margin: 0.5em 0 0.5em;
-}
-@media (min-width: 1024px) {
-  h2 {
-    margin: 0.5em 1em;
-  }
-}
-@media (min-width: 1200px) {
-  h2 {
-    margin: 0.5em 0em;
-  }
 }
 
 hr {
@@ -567,6 +556,9 @@ body {
   flex: 1;
 }
 
+.section-title {
+  margin: 0.5em 0 0.5em;
+}
 @media (min-width: 600px) {
   .section-title {
     text-align: center;
@@ -575,6 +567,12 @@ body {
 @media (min-width: 1024px) {
   .section-title {
     text-align: left;
+    margin: 0.5em 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    margin: 0.5em 0em;
   }
 }
 
@@ -913,6 +911,7 @@ body {
     width: 100%;
     max-width: none;
     flex-flow: row wrap;
+    justify-content: center;
   }
 }
 .menu-container .menu .restaurant {
@@ -925,9 +924,8 @@ body {
 }
 @media (min-width: 894px) {
   .menu-container .menu .restaurant {
-    margin: 0 auto;
-    max-width: none;
-    padding: 0 15em;
+    margin: 0 15em;
+    justify-content: space-evenly;
   }
 }
 .menu-container .menu .restaurant .name {
@@ -964,16 +962,19 @@ body {
 }
 @media (min-width: 894px) {
   .menu-container .menu .dish {
-    max-width: 290px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    max-width: none;
+    margin: 0 0.8em;
+    flex: 1;
   }
 }
 .menu-container .menu .dish .dish-type {
   font-size: 16px;
+  margin: 0.5em 0 0.5em;
 }
 .menu-container .menu .dish .choices {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -1035,7 +1036,8 @@ body {
 }
 @media (min-width: 894px) {
   .menu-container .menu .dish .choices .item {
-    max-width: 260px;
+    width: 100%;
+    max-width: none;
   }
 }
 .menu-container .menu .dish .choices .item .item-details {
