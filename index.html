@@ -10,10 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+
+    <!-- Loader -->
+
+    <!-- <div class="loader-container">
+        <div class="loader"></div>
+    </div> -->
 
     <div class="container">
 
@@ -21,14 +26,14 @@
 
         <header>
             <div class="header">
-                <span class="logo"><img src="public/img/logo/ohmyfood.png" alt="logo ohmyfood"></span>
+                <div class="logo"><img src="public/img/logo/ohmyfood.png" alt="logo ohmyfood"></div>
             </div>
         </header>
 
 
         <!-- Section 1 -->
 
-        <section class=section1>
+        <section id="booking">
 
             <!-- Location -->
             
@@ -38,6 +43,7 @@
                     
                     <span class="icon-map"><i class="fas fa-map-marker-alt"></i></span>
                     <input type="text" placeholder="Paris, Belleville" required>
+                    <span class="icon-search"><i class="fas fa-search"></i></span>
                 </form>
 
             </div>
@@ -51,55 +57,17 @@
                 </div>
 
                 <div class="presentation-subtitle">
-                    <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 </div>
 
-                <button type="submit" class="explore">
-                    <span class="button-text">Explorer nos restaurants</span>
-                </button>
+                <a href="#restaurants">
 
-            </div>
+                    <button class="colored-btn" type="submit">
+                        <span class="button-text">Explorer nos restaurants</span>
+                    </button>
 
-            <!-- Functioning -->
+                </a>
 
-            <div class="functioning">
-
-                <div class="title">
-                    <h3>Fonctionnement</h3>
-                </div>
-
-                <div class="box-container">
-
-                    <div class="box">
-
-                            <span class="step-number">1</span>
-                            <span class="icon"><i class="fas fa-mobile-alt"></i></span>
-                            <span class="text">Choisissez un restaurant</span>
-                                          
-                    </div>
-
-                    <div class="box">
-
-                            <span class="step-number">2</span>
-                            <span class="icon"><i class="fas fa-list-ul"></i></span>
-                            <span class="text">Composez votre menu</span>
-                        
-                    </div>
-
-                    <div class="box">
-
-                            <span class="step-number">3</span>
-                            <span class="icon"><i class="fas fa-store"></i></span>
-                            <span class="text">Dégustez au restaurant</span>
-                        
-                    </div>
-
-                </div>
-
-
-
-                <!-- <div class="buttons">
-                </div> -->
 
             </div>
 
@@ -108,36 +76,74 @@
 
         <!-- Section 2 -->
 
-        <section class=section2>
+        <section id="functioning">
+
+            
+            <h2 class="section-title">Fonctionnement</h2>
+            
+
+            <div class="box-container">
+
+                <div class="box">
+
+                        <span class="step-number">1</span>
+                        <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                        <span class="text">Choisissez un restaurant</span>
+                                        
+                </div>
+
+                <div class="box">
+
+                        <span class="step-number">2</span>
+                        <span class="icon"><i class="fas fa-list-ul"></i></span>
+                        <span class="text">Composez votre menu</span>
+                    
+                </div>
+
+                <div class="box">
+
+                        <span class="step-number">3</span>
+                        <span class="icon"><i class="fas fa-store"></i></span>
+                        <span class="text">Dégustez au restaurant</span>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section 3 -->
+
+        <section id="restaurants">
 
             <!-- Restaurants -->
 
-            <div class="title">
-                <h3>Restaurants</h3>
-            </div>
+            
+                <h2 class="section-title">Restaurants</h2>
+           
 
-            <div class="restaurants">
+            <div class="restaurants-container">
 
                 <!-- Restaurant 1 -->
 
-                <a class="rest1 map" href="#">
-                        
+                <a class="rest1 map" href="restaurant1.html">
+
+                    
                     <div class="rest-img">
-                        <span class="img-container">
-                            <img class="img-rest" alt="restaurant 1" src="public/img/restaurants/rest1.jpg"> 
-                            <div class="new">Nouveau</div>
-                        </span>
+                        <div class="new">Nouveau</div>  
+                        <img class="img img_1" alt="restaurant 1" src="public/img/restaurants/rest1.jpg">                             
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>La palette du goût</h4></div>
-                            <div class="rest-location"><h5>Ménimontant</h5></div>
+                            <p class="map-title">La palette du goût</p>
+                            <p class="map-subtitle">Ménimontant</p>
                         </div>
 
                         <div class="like">
-                            <span><i class="fas fa-heart"></i><i class="far fa-heart"></i></span>
+                            <i class="far fa-heart"></i><i class="fas fa-heart"></i>
                         </div>
 
                     </div>
@@ -147,23 +153,21 @@
                 <!-- Restaurant 2 -->
 
                 <a class="rest2 map" href="#">
-                        
+                      
                     <div class="rest-img">
-                        <span class="img-container">
-                            <img class="img-rest" alt="restaurant 2" src="public/img/restaurants/rest2.jpg"> 
-                            <div class="new">Nouveau</div>
-                        </span>
+                        <div class="new">Nouveau</div>
+                        <img class="img img_2" alt="restaurant 2" src="public/img/restaurants/rest2.jpg"> 
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>La note enchantée</h4></div>
-                            <div class="rest-location"><h5>Charonne</h5></div>
+                            <p class="map-title">La note enchantée</p>
+                            <p class="map-subtitle">Charonne</p>
                         </div>
 
                         <div class="like">
-                            <span><i class="fas fa-heart"></i><i class="far fa-heart"></i></span>
+                            <i class="far fa-heart"></i><i class="fas fa-heart"></i>
                         </div>
 
                     </div>
@@ -175,20 +179,18 @@
                 <a class="rest3 map" href="#">
                         
                     <div class="rest-img">
-                        <span class="img-container">
-                            <img class="img-rest" alt="restaurant 3" src="public/img/restaurants/rest3.jpg"> 
-                        </span>
+                        <img class="img img_3" alt="restaurant 3" src="public/img/restaurants/rest3.jpg"> 
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>À la française</h4></div>
-                            <div class="rest-location"><h5>Cité Rouge</h5></div>
+                            <p class="map-title">À la française</p>
+                            <p class="map-subtitle">Cité Rouge</p>
                         </div>
 
                         <div class="like">
-                            <span><i class="fas fa-heart"></i><i class="far fa-heart"></i></span>
+                            <i class="far fa-heart"></i><i class="fas fa-heart"></i>
                         </div>
 
                     </div>
@@ -200,20 +202,18 @@
                 <a class="rest4 map" href="#">
                         
                     <div class="rest-img">
-                        <span class="img-container">
-                            <img class="img-rest" alt="restaurant 4" src="public/img/restaurants/rest4.jpg"> 
-                        </span>
+                         <img class="img img_4" alt="restaurant 4" src="public/img/restaurants/rest4.jpg"> 
                     </div>
 
                     <div class="rest-text">
 
                         <div class="rest-details">
-                            <div class="rest-name"><h4>Le délice des sens</h4></div>
-                            <div class="rest-location"><h5>Folie-Méricourt</h5></div>
+                            <p class="map-title">Le délice des sens</p>
+                            <p class="map-subtitle">Folie-Méricourt</p>
                         </div>
 
                         <div class="like">
-                            <span><i class="fas fa-heart"></i><i class="far fa-heart"></i></span>
+                            <i class="far fa-heart"></i><i class="fas fa-heart"></i>
                         </div>
 
                     </div>
@@ -223,7 +223,8 @@
             </div>
 
         </section>
-
+    
+    </div>
 
         <!-- Footer -->
 
@@ -231,9 +232,7 @@
 
             <div class=footer>
 
-                <div class="logo-footer">ohmyfood
-                    <!-- <span class="logo-footer"><img src="public/img/logo/ohmyfood.png" alt="white logo ohmyfood"></span> -->
-                </div>
+                <div class="logo-footer">ohmyfood</div>
 
                 <ul>
                     <li class="li1"><a href="#"><span><i class="fas fa-utensils"></i></span>Proposer un restaurant</a></li>
@@ -243,17 +242,10 @@
                 </ul>
 
             </div>
-
-
-
-        </footer>
-
         
+        </footer>    
 
 
-
-          
-    
-    
 </body>
+
 </html>
