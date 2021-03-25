@@ -13,7 +13,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    margin: 1.8em 2em 1.5em;
+    margin: 1.3em 2em 1em;
 }
 
 @media (min-width: 1024px) {
@@ -24,9 +24,9 @@
 @media (min-width: 1200px) {
     width: 100%;
     max-width:1250px;
-    min-width:1200px;
+    min-width:1000px;
     order:1;
-    margin: 1.8em auto 1.5em;
+    margin: 1.3em auto 1em;
     padding-left: 2em;
 }
 

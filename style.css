@@ -55,7 +55,7 @@ hr {
   height: 10px;
   border: none;
   border-top: 3px solid #99E2D0;
-  width: 45px;
+  width: 38px;
   margin: 3px 0 5px;
 }
 
@@ -115,7 +115,7 @@ hr {
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    margin: 1.8em 2em 1.5em;
+    margin: 1.3em 2em 1em;
   }
 }
 @media (min-width: 1024px) {
@@ -127,9 +127,9 @@ hr {
   .header {
     width: 100%;
     max-width: 1250px;
-    min-width: 1200px;
+    min-width: 1000px;
     order: 1;
-    margin: 1.8em auto 1.5em;
+    margin: 1.3em auto 1em;
     padding-left: 2em;
   }
 }
@@ -916,6 +916,9 @@ main .menu-container .menu {
     max-width: none;
     flex-flow: row wrap;
     justify-content: center;
+  }
+  main .menu-container .menu--rest2 .dish {
+    height: 390px;
   }
 }
 @media (min-width: 1200px) {

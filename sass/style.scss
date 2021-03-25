@@ -36,16 +36,6 @@ main{
 
 .menu-container{
 
-// @media (min-width: 600px) {
-//     position: relative;
-//     display: flex;
-//     background-color:#fff;
-//     margin: 0;
-//     width: 100%;
-//     z-index:2;
-// }
-
-
 
     .menu{
         position: relative;
@@ -75,12 +65,19 @@ main{
         max-width: none;
         flex-flow: row wrap;
         justify-content: center;
+
+        &--rest2{
+            .dish{
+                height:390px;
+            }
+        }
     }
 
     @media (min-width: 1200px) {
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
+       
 
         .restaurant{
             @include flex-wrap(space-between);
@@ -90,17 +87,8 @@ main{
 
         @media (min-width: 894px) {
             margin: 0 15em;
-            // max-width: none;
             justify-content: space-evenly;
         }
-
-        // @media (min-width: 1024px) {
-        //     margin: 0 20em;
-        // }
-
-        // // @media (min-width: 1200px) {
-        // //     margin: 0 25em;
-        // // }
 
             .name{
                 font-family: 'shrikhand', sans-serif;
@@ -141,18 +129,12 @@ main{
             flex:1;
         }
 
-        // @media (min-width: 768px) {
-        //     max-width: none;
-        //     width: 100%;
-        // }
-
             .dish-type{
                 font-size: 16px;
                 margin:0.5em 0 .5em; 
             }
 
             .choices{
-                // @include flex-wrap(space-between);
                 margin: 0;
                 padding:0;
                 width:100%;
@@ -243,14 +225,6 @@ main{
                 }   
                 
 
-                // @media (min-width: 768px) {
-                //     max-width: 250px;
-                //     width: 30%;
-                //     margin: 1em .5em 0;
-                //     height: 90px;
-                // }
-                
-
                     .item-details{
                         display:block;
                         text-align: left;
@@ -259,9 +233,7 @@ main{
                         white-space: nowrap;
                         padding-left:.8em;
 
-                    // @media (min-width: 768px) {
-                    //     padding: .75em 0 .75em .8em;
-                    // }
+                  
 
                         .item-title {
                             font-size: 18px;
@@ -273,13 +245,6 @@ main{
                             overflow: hidden;
                             text-overflow: ellipsis;
                         
-                        // @media (min-width: 600px) {
-                        //     font-size: 20px;
-                        // }
-                        
-                        // @media (min-width: 768px) {
-                        //     font-size: 18px;
-                        // }
                         
                         @media (min-width: 894px) {
                             font-size: 16px;
@@ -301,21 +266,13 @@ main{
                             overflow: hidden;
                             text-overflow: ellipsis;
                             
-                        // @media (min-width: 600px) {
-                        //     font-size: 18px;
-                        // }
                         
-                        // @media (min-width: 768px) {
-                        //     font-size: 16px;
-                        // }
                         
                         @media (min-width: 894px) {
                             font-size: 14px;
                         }
                         
-                        // @media (min-width: 1200px) {
-                        //     font-size: 12px;
-                        // }
+                        
                         
                         }
                             
@@ -336,9 +293,7 @@ main{
                             padding:2.1em 1.2em 0em;
                             width:55%;
 
-                        // @media (min-width: 768px) {
-                        //     padding: 2.1em .5em 0em;
-                        // }
+                        
                         }
 
                         .checkbox{
