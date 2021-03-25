@@ -87,6 +87,10 @@
             justify-content: space-evenly;
         }
 
+        @media (min-width: 1200px) {
+            margin: 0 20em;
+        }
+
             .name{
                 font-family: 'shrikhand', sans-serif;
                 font-size: 26px;
@@ -95,7 +99,7 @@
         }
 
         .dish{
-            max-width: 600px;
+            width: 100%;
             padding:1.5em 0 .5em;
             animation: fadein 1.5s backwards;
             @for $i from 1 through $num-dish {
@@ -179,7 +183,61 @@
                 @media (min-width: 894px) {
                     width:100%;
                     max-width: none;
+
+                    &:hover{
+                        width:440px;
+                        transition: 0.4s;
+                        transform: scale(1.1);
+                    }
+
+                    &--7:hover{
+                        transform: translateX(-10em)
+                    }
+
+                    &--8:hover{
+                        transform: translateX(-10em)
+                    }
+
+                    &--9:hover{
+                        transform: translateX(-10em)
+                    }
+                    
                 }
+
+                @media (min-width: 1024px) {
+
+            
+                    &--7:hover{
+                        transform: translateX(-7em);
+                    }
+
+                    &--8:hover{
+                        transform: translateX(-7em);
+                    }
+
+                    &--9:hover{
+                        transform: translateX(-7em);
+                    }
+                    
+                }
+
+                @media (min-width: 1200px) {
+
+            
+                    &--7:hover{
+                        transform: translateX(-4em);
+                    }
+
+                    &--8:hover{
+                        transform: translateX(-4em);
+                    }
+
+                    &--9:hover{
+                        transform: translateX(-4em);
+                    }
+                    
+                }
+                
 
                 // @media (min-width: 768px) {
                 //     max-width: 250px;
@@ -211,20 +269,20 @@
                             overflow: hidden;
                             text-overflow: ellipsis;
                         
-                        @media (min-width: 600px) {
-                            font-size: 20px;
-                        }
+                        // @media (min-width: 600px) {
+                        //     font-size: 20px;
+                        // }
                         
                         // @media (min-width: 768px) {
                         //     font-size: 18px;
                         // }
                         
                         @media (min-width: 894px) {
-                            font-size: 18px;
+                            font-size: 16px;
                         }
                         
                         @media (min-width: 1200px) {
-                            font-size: 18px;
+                            font-size: 14px;
                         }
                         
                         }
@@ -239,20 +297,20 @@
                             overflow: hidden;
                             text-overflow: ellipsis;
                             
-                        @media (min-width: 600px) {
-                            font-size: 18px;
-                        }
+                        // @media (min-width: 600px) {
+                        //     font-size: 18px;
+                        // }
                         
                         // @media (min-width: 768px) {
                         //     font-size: 16px;
                         // }
                         
                         @media (min-width: 894px) {
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                         
                         @media (min-width: 1200px) {
-                            font-size: 16px;
+                            font-size: 12px;
                         }
                         
                         }

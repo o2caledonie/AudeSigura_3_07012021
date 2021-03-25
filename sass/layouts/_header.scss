@@ -47,11 +47,11 @@
         
              
         img{
-        width:170px;
+        width:160px;
 
-        @media (min-width: 768px) {
-            width: 160px;
-        }
+        // @media (min-width: 768px) {
+        //     width: 140px;
+        // }
 
         @media (min-width: 1200px) {
             width: 140px;
