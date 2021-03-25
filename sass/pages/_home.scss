@@ -191,7 +191,14 @@ body {
                     text-align: left;
                 }
     
-                }            
+                }  
+                
+                .explore {
+
+                    @media (min-width: 1200px) {
+                    margin: 0 2em 4em;
+                }
+                }
             
             }
 

@@ -22,9 +22,12 @@
 }
 
 @media (min-width: 1200px) {
-    max-width: 100%;
-    width:1200px;
+    width: 100%;
+    max-width:1250px;
+    min-width:1200px;
     order:1;
+    margin: 1.8em auto 1.5em;
+    padding-left: 2em;
 }
 
     i{

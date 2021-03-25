@@ -8,18 +8,28 @@
 @import "./components/button";
 @import "./components/like";
 
-// .img-container{
-//     @include img-container;
+
+main{
+
+@media (min-width: 1200px) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width:95%;
+    max-width: 1250px;
+    margin: 2em auto;
+    border-radius: 30px;
+}
+
 
     .img{
         @include img;
 
-        // &_2{
-        
-        // @media (min-width: 768px) {
-        //     top: -100px;
-        // }
-        // }
+        @media (min-width: 1200px) {
+            
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
 
     }
 
@@ -67,19 +77,16 @@
         justify-content: center;
     }
 
-    // @media (min-width: 768px) {
-    //     margin: 0;
-    //     max-width: 100%;
-    //     border-radius: 0px;
-    // }
-        
-
+    @media (min-width: 1200px) {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
 
         .restaurant{
             @include flex-wrap(space-between);
             align-items: baseline;
             width:100%;
-            max-width: 350px;
+            max-width: 450px;
 
         @media (min-width: 894px) {
             margin: 0 15em;
@@ -87,9 +94,13 @@
             justify-content: space-evenly;
         }
 
-        @media (min-width: 1200px) {
-            margin: 0 20em;
-        }
+        // @media (min-width: 1024px) {
+        //     margin: 0 20em;
+        // }
+
+        // // @media (min-width: 1200px) {
+        // //     margin: 0 25em;
+        // // }
 
             .name{
                 font-family: 'shrikhand', sans-serif;
@@ -185,21 +196,21 @@
                     max-width: none;
 
                     &:hover{
-                        width:440px;
+                        width:400px;
                         transition: 0.4s;
                         transform: scale(1.1);
                     }
 
                     &--7:hover{
-                        transform: translateX(-10em)
+                        transform: translateX(-8em)
                     }
 
                     &--8:hover{
-                        transform: translateX(-10em)
+                        transform: translateX(-8em)
                     }
 
                     &--9:hover{
-                        transform: translateX(-10em)
+                        transform: translateX(-8em)
                     }
                     
                 }
@@ -208,15 +219,15 @@
 
             
                     &--7:hover{
-                        transform: translateX(-7em);
+                        transform: translateX(-5em);
                     }
 
                     &--8:hover{
-                        transform: translateX(-7em);
+                        transform: translateX(-5em);
                     }
 
                     &--9:hover{
-                        transform: translateX(-7em);
+                        transform: translateX(-5em);
                     }
                     
                 }
@@ -224,19 +235,12 @@
                 @media (min-width: 1200px) {
 
             
-                    &--7:hover{
-                        transform: translateX(-4em);
+                    &:hover{
+                        width:100%;
+                        transform: none;
                     }
 
-                    &--8:hover{
-                        transform: translateX(-4em);
-                    }
-
-                    &--9:hover{
-                        transform: translateX(-4em);
-                    }
-                    
-                }
+                }   
                 
 
                 // @media (min-width: 768px) {
@@ -281,9 +285,9 @@
                             font-size: 16px;
                         }
                         
-                        @media (min-width: 1200px) {
-                            font-size: 14px;
-                        }
+                        // @media (min-width: 1200px) {
+                        //     font-size: 14px;
+                        // }
                         
                         }
                         
@@ -309,9 +313,9 @@
                             font-size: 14px;
                         }
                         
-                        @media (min-width: 1200px) {
-                            font-size: 12px;
-                        }
+                        // @media (min-width: 1200px) {
+                        //     font-size: 12px;
+                        // }
                         
                         }
                             
@@ -377,8 +381,14 @@
             margin-top: 2em;
             text-align: center;
             align-self: center;
+
+        @media (min-width: 1200px) {
+            margin: 2em 15em 0;
+        }
         }
 
     }
+
+}
 
 }

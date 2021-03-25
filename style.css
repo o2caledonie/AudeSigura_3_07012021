@@ -125,9 +125,12 @@ hr {
 }
 @media (min-width: 1200px) {
   .header {
-    max-width: 100%;
-    width: 1200px;
+    width: 100%;
+    max-width: 1250px;
+    min-width: 1200px;
     order: 1;
+    margin: 1.8em auto 1.5em;
+    padding-left: 2em;
   }
 }
 .header i {
@@ -373,6 +376,11 @@ body {
 @media (min-width: 1200px) {
   #booking .presentation .presentation-subtitle {
     text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #booking .presentation .explore {
+    margin: 0 2em 4em;
   }
 }
 
@@ -799,11 +807,6 @@ body {
     margin-bottom: 1em;
   }
 }
-@media (min-width: 1200px) {
-  .colored-btn {
-    margin: 1em 0 4em 4em;
-  }
-}
 .colored-btn .button-text {
   color: #fff;
   padding: 1em;
@@ -854,16 +857,22 @@ body {
     margin-right: 4em;
   }
 }
-@media (min-width: 1200px) {
-  .like .fa-heart {
-    font-size: 28px;
-  }
-}
 .like:hover .fas {
   clip-path: circle(100%);
 }
 
-.img {
+@media (min-width: 1200px) {
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 95%;
+    max-width: 1250px;
+    margin: 2em auto;
+    border-radius: 30px;
+  }
+}
+main .img {
   display: block;
   position: relative;
   width: 100%;
@@ -871,8 +880,13 @@ body {
   object-fit: cover;
   z-index: 1;
 }
-
-.menu-container .menu {
+@media (min-width: 1200px) {
+  main .img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
+main .menu-container .menu {
   position: relative;
   background-color: #f3f3f3;
   padding: 2em 1em 1em;
@@ -886,7 +900,7 @@ body {
   z-index: 2;
 }
 @media (min-width: 600px) {
-  .menu-container .menu {
+  main .menu-container .menu {
     align-items: center;
     margin: 2.5em auto;
     width: 90%;
@@ -895,7 +909,7 @@ body {
   }
 }
 @media (min-width: 894px) {
-  .menu-container .menu {
+  main .menu-container .menu {
     border-radius: 0;
     margin: 0;
     width: 100%;
@@ -904,42 +918,43 @@ body {
     justify-content: center;
   }
 }
-.menu-container .menu .restaurant {
+@media (min-width: 1200px) {
+  main .menu-container .menu {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+main .menu-container .menu .restaurant {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
 }
 @media (min-width: 894px) {
-  .menu-container .menu .restaurant {
+  main .menu-container .menu .restaurant {
     margin: 0 15em;
     justify-content: space-evenly;
   }
 }
-@media (min-width: 1200px) {
-  .menu-container .menu .restaurant {
-    margin: 0 20em;
-  }
-}
-.menu-container .menu .restaurant .name {
+main .menu-container .menu .restaurant .name {
   font-family: "shrikhand", sans-serif;
   font-size: 26px;
   font-weight: 500;
 }
-.menu-container .menu .dish {
+main .menu-container .menu .dish {
   width: 100%;
   padding: 1.5em 0 0.5em;
   animation: fadein 1.5s backwards;
 }
-.menu-container .menu .dish--1 {
+main .menu-container .menu .dish--1 {
   animation-delay: 0.5s;
 }
-.menu-container .menu .dish--2 {
+main .menu-container .menu .dish--2 {
   animation-delay: 1s;
 }
-.menu-container .menu .dish--3 {
+main .menu-container .menu .dish--3 {
   animation-delay: 1.5s;
 }
 @keyframes fadein {
@@ -951,12 +966,12 @@ body {
   }
 }
 @media (min-width: 600px) {
-  .menu-container .menu .dish {
+  main .menu-container .menu .dish {
     max-width: 500px;
   }
 }
 @media (min-width: 894px) {
-  .menu-container .menu .dish {
+  main .menu-container .menu .dish {
     display: flex;
     flex-flow: column wrap;
     width: 30%;
@@ -965,16 +980,16 @@ body {
     flex: 1;
   }
 }
-.menu-container .menu .dish .dish-type {
+main .menu-container .menu .dish .dish-type {
   font-size: 16px;
   margin: 0.5em 0 0.5em;
 }
-.menu-container .menu .dish .choices {
+main .menu-container .menu .dish .choices {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-.menu-container .menu .dish .choices .item {
+main .menu-container .menu .dish .choices .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -991,34 +1006,34 @@ body {
   overflow: hidden;
   animation: fadein 1.5s backwards;
 }
-.menu-container .menu .dish .choices .item--1 {
+main .menu-container .menu .dish .choices .item--1 {
   animation-delay: 0.2s;
 }
-.menu-container .menu .dish .choices .item--2 {
+main .menu-container .menu .dish .choices .item--2 {
   animation-delay: 0.4s;
 }
-.menu-container .menu .dish .choices .item--3 {
+main .menu-container .menu .dish .choices .item--3 {
   animation-delay: 0.6s;
 }
-.menu-container .menu .dish .choices .item--4 {
+main .menu-container .menu .dish .choices .item--4 {
   animation-delay: 0.8s;
 }
-.menu-container .menu .dish .choices .item--5 {
+main .menu-container .menu .dish .choices .item--5 {
   animation-delay: 1s;
 }
-.menu-container .menu .dish .choices .item--6 {
+main .menu-container .menu .dish .choices .item--6 {
   animation-delay: 1.2s;
 }
-.menu-container .menu .dish .choices .item--7 {
+main .menu-container .menu .dish .choices .item--7 {
   animation-delay: 1.4s;
 }
-.menu-container .menu .dish .choices .item--8 {
+main .menu-container .menu .dish .choices .item--8 {
   animation-delay: 1.6s;
 }
-.menu-container .menu .dish .choices .item--9 {
+main .menu-container .menu .dish .choices .item--9 {
   animation-delay: 1.8s;
 }
-.menu-container .menu .dish .choices .item--10 {
+main .menu-container .menu .dish .choices .item--10 {
   animation-delay: 2s;
 }
 @keyframes fadein {
@@ -1030,48 +1045,43 @@ body {
   }
 }
 @media (min-width: 894px) {
-  .menu-container .menu .dish .choices .item {
+  main .menu-container .menu .dish .choices .item {
     width: 100%;
     max-width: none;
   }
-  .menu-container .menu .dish .choices .item:hover {
-    width: 440px;
+  main .menu-container .menu .dish .choices .item:hover {
+    width: 400px;
     transition: 0.4s;
     transform: scale(1.1);
   }
-  .menu-container .menu .dish .choices .item--7:hover {
-    transform: translateX(-10em);
+  main .menu-container .menu .dish .choices .item--7:hover {
+    transform: translateX(-8em);
   }
-  .menu-container .menu .dish .choices .item--8:hover {
-    transform: translateX(-10em);
+  main .menu-container .menu .dish .choices .item--8:hover {
+    transform: translateX(-8em);
   }
-  .menu-container .menu .dish .choices .item--9:hover {
-    transform: translateX(-10em);
+  main .menu-container .menu .dish .choices .item--9:hover {
+    transform: translateX(-8em);
   }
 }
 @media (min-width: 1024px) {
-  .menu-container .menu .dish .choices .item--7:hover {
-    transform: translateX(-7em);
+  main .menu-container .menu .dish .choices .item--7:hover {
+    transform: translateX(-5em);
   }
-  .menu-container .menu .dish .choices .item--8:hover {
-    transform: translateX(-7em);
+  main .menu-container .menu .dish .choices .item--8:hover {
+    transform: translateX(-5em);
   }
-  .menu-container .menu .dish .choices .item--9:hover {
-    transform: translateX(-7em);
+  main .menu-container .menu .dish .choices .item--9:hover {
+    transform: translateX(-5em);
   }
 }
 @media (min-width: 1200px) {
-  .menu-container .menu .dish .choices .item--7:hover {
-    transform: translateX(-4em);
-  }
-  .menu-container .menu .dish .choices .item--8:hover {
-    transform: translateX(-4em);
-  }
-  .menu-container .menu .dish .choices .item--9:hover {
-    transform: translateX(-4em);
+  main .menu-container .menu .dish .choices .item:hover {
+    width: 100%;
+    transform: none;
   }
 }
-.menu-container .menu .dish .choices .item .item-details {
+main .menu-container .menu .dish .choices .item .item-details {
   display: block;
   text-align: left;
   overflow: hidden;
@@ -1079,7 +1089,7 @@ body {
   white-space: nowrap;
   padding-left: 0.8em;
 }
-.menu-container .menu .dish .choices .item .item-details .item-title {
+main .menu-container .menu .dish .choices .item .item-details .item-title {
   font-size: 18px;
   font-weight: 800;
   margin: 0;
@@ -1090,16 +1100,11 @@ body {
   text-overflow: ellipsis;
 }
 @media (min-width: 894px) {
-  .menu-container .menu .dish .choices .item .item-details .item-title {
+  main .menu-container .menu .dish .choices .item .item-details .item-title {
     font-size: 16px;
   }
 }
-@media (min-width: 1200px) {
-  .menu-container .menu .dish .choices .item .item-details .item-title {
-    font-size: 14px;
-  }
-}
-.menu-container .menu .dish .choices .item .item-details .item-description {
+main .menu-container .menu .dish .choices .item .item-details .item-description {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -1110,30 +1115,25 @@ body {
   text-overflow: ellipsis;
 }
 @media (min-width: 894px) {
-  .menu-container .menu .dish .choices .item .item-details .item-description {
+  main .menu-container .menu .dish .choices .item .item-details .item-description {
     font-size: 14px;
   }
 }
-@media (min-width: 1200px) {
-  .menu-container .menu .dish .choices .item .item-details .item-description {
-    font-size: 12px;
-  }
-}
-.menu-container .menu .dish .choices .item .slider {
+main .menu-container .menu .dish .choices .item .slider {
   display: flex;
   height: 100%;
   padding: 0;
   margin-right: -60px;
   transition: 0.6s;
 }
-.menu-container .menu .dish .choices .item .slider .price {
+main .menu-container .menu .dish .choices .item .slider .price {
   font-size: 15px;
   font-weight: 600;
   background-color: #fff;
   padding: 2.1em 1.2em 0em;
   width: 55%;
 }
-.menu-container .menu .dish .choices .item .slider .checkbox {
+main .menu-container .menu .dish .choices .item .slider .checkbox {
   height: 100%;
   width: 45%;
   padding: 1.25em 1.1em;
@@ -1142,21 +1142,26 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.menu-container .menu .dish .choices .item .slider .checkbox .fas {
+main .menu-container .menu .dish .choices .item .slider .checkbox .fas {
   font-size: 20px;
   color: #fff;
   transition: transform 0.7s;
 }
-.menu-container .menu .dish .choices .item:hover .slider {
+main .menu-container .menu .dish .choices .item:hover .slider {
   margin-right: 0px;
 }
-.menu-container .menu .dish .choices .item:hover .slider .fas {
+main .menu-container .menu .dish .choices .item:hover .slider .fas {
   transform: rotate(360deg);
 }
-.menu-container .menu .order {
+main .menu-container .menu .order {
   margin-top: 2em;
   text-align: center;
   align-self: center;
+}
+@media (min-width: 1200px) {
+  main .menu-container .menu .order {
+    margin: 2em 15em 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
