@@ -116,7 +116,6 @@ hr {
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    margin: 1.3em 2em 1em;
   }
 }
 @media (min-width: 1024px) {
@@ -129,8 +128,7 @@ hr {
     width: 100%;
     max-width: 1250px;
     min-width: 1000px;
-    margin: 1.3em auto 1em;
-    padding-left: 2em;
+    margin: 0 auto;
   }
 }
 .header i {
@@ -144,7 +142,12 @@ hr {
   .header i {
     display: block;
     position: static;
-    margin-right: 2em;
+    margin-left: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .header .logo {
+    margin: 1.3em 2em 1em;
   }
 }
 .header .logo img {
@@ -218,7 +221,7 @@ body {
   .container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: stretch;
     max-width: 1250px;
     margin: auto;
   }
@@ -432,7 +435,7 @@ header {
 @media (min-width: 1200px) {
   #functioning {
     padding-top: 0;
-    margin-top: -24em;
+    margin-top: -23em;
     margin-left: 2em;
     width: 35%;
     order: 5;
@@ -618,10 +621,9 @@ header {
 }
 @media (min-width: 1200px) {
   #restaurants {
-    margin-top: 0.5em;
-    margin-left: 0em;
+    margin: 0.5em 0em 0em;
     padding: 0.8em 1.5em;
-    width: 53%;
+    width: 55%;
     order: 4;
   }
 }
@@ -898,7 +900,7 @@ header {
     justify-content: center;
     width: 95%;
     max-width: 1250px;
-    margin: 2em auto;
+    margin: 0 auto 1.5em;
     border-radius: 30px;
   }
 }

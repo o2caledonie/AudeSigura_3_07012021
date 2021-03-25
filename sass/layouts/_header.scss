@@ -14,20 +14,17 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    margin: 1.3em 2em 1em;
 }
 
 @media (min-width: 1024px) {
     max-width: 35%;
-    
 }
 
 @media (min-width: 1200px) {
     width: 100%;
     max-width:1250px;
     min-width:1000px;
-    margin: 1.3em auto 1em;
-    padding-left: 2em;
+    margin: 0 auto;
 }
 
     i{
@@ -40,14 +37,18 @@
     @media (min-width: 768px) {
         display:block;
         position:static;
-        margin-right: 2em;
+        margin-left: 2em;
     }  
 
     }
  
 
     .logo {
-        
+
+        @media (min-width: 768px) {
+            margin: 1.3em 2em 1em;
+        }
+
              
         img{
         width:160px;
