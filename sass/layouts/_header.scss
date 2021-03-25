@@ -26,7 +26,6 @@
     width: 100%;
     max-width:1250px;
     min-width:1000px;
-    order:1;
     margin: 1.3em auto 1em;
     padding-left: 2em;
 }
@@ -53,9 +52,6 @@
         img{
         width:160px;
 
-        // @media (min-width: 768px) {
-        //     width: 140px;
-        // }
 
         @media (min-width: 1200px) {
             width: 140px;
@@ -63,4 +59,6 @@
 
         }
     }
+
+   
 }
