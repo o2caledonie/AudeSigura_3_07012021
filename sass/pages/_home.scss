@@ -126,7 +126,7 @@ body {
         // Location
   
         .location-container {
-            padding:1em;
+            padding:.8em;
             margin:0;
             background-color: lighten($grey,45);
             box-shadow: inset 0 15px 15px -20px $grey;
@@ -162,7 +162,7 @@ body {
 
             #location { 
             display: flex; 
-            width:180px;
+            width:150px;
             margin:auto;
 
             // @media (min-width: 1200px) {
@@ -171,6 +171,7 @@ body {
     
                     .icon-map {
                         padding: 0 0.5em 0;
+                        font-size: 15px;
 
                     @media (min-width: 600px) {
                         font-size: 18px;
@@ -187,7 +188,7 @@ body {
                         border: none;
                         outline-style: none;
                         background-color: transparent;
-                        font-size: 16px;   
+                        font-size: 15px;   
                         font-weight: 600;
                     }
 
@@ -256,7 +257,7 @@ body {
 
                 .presentation-subtitle {
                     text-align: center;
-                    margin: 1em 0 1em;
+                    margin: .5em 0 1em;
 
                 @media (min-width: 1200px) {
                     text-align: left;
@@ -279,7 +280,7 @@ body {
     
         #functioning {
             background-color: #fff;
-            padding:2em 1.5em;
+            padding:1.5em 1.2em;
 
         @media (min-width: 768px) {
             padding: 1em 0;
@@ -329,18 +330,18 @@ body {
                 .box {
                     @include flex-wrap(space-between);
                     @include shadow;
-                    width: 320px;
-                    height: 70px;
+                    width: 100%;
+                    max-width: 350px;
+                    height: 63px;
                     border-radius: 20px;
                     background: lighten($grey, 50);
                     align-items: center;
-                    margin: 0 auto 1.8em;
-                    padding-right: .5em;
+                    margin: 0 auto 1.2em;
                     cursor: pointer;
 
                 @media (min-width: 600px) {
                     width: 360px;
-                    height: 80px;
+                    height: 65px;
                     border-radius: 25px;
                 }
 
@@ -371,9 +372,10 @@ body {
                     justify-content: flex-start;
                 }
                     &>* {
+                
                     
                     @media (min-width: 600px) {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
 
                     @media (min-width: 768px) {
@@ -398,6 +400,7 @@ body {
                     .step-number{
                         background: $primary-color;
                         color: #fff;
+                        font-size: 15px;
                         font-weight: 400;
                         border-radius: 50px;
                         margin-left: -10px;
@@ -415,7 +418,11 @@ body {
                     }
 
                     .icon{
-                        padding: 0 1.4em;
+                        padding: 0 1.5em;
+
+                    @media (min-width: 600px) {
+                        padding: 0 2em;
+                    }
 
                     @media (min-width: 768px) {
                         padding: 0 1em;
@@ -427,13 +434,18 @@ body {
 
                         .fas {
                             color: $grey;
-                            font-size: 1.3em;
+                            font-size: 1.1em;
                         }
 
                     }
 
                     .text{
                         flex:1;
+                        font-size: 16px;
+                    
+                    @media (min-width: 768px) {
+                        font-size: 15px;
+                    }
                     }
 
                 }
@@ -468,7 +480,7 @@ body {
   
     #restaurants{
       background-color: lighten($grey,50);
-      padding: 2em 1.5em;
+      padding: 1.5em 1.2em;
 
     @media (min-width: 768px) {
         margin: 0em 2em 1em;
@@ -507,16 +519,16 @@ body {
                 justify-content: flex-end;
                 @include shadow;
                 height:auto;
-                max-height: 230px;
+                max-height: 240px;
                 width:100%;
-                max-width: 324px;
+                max-width: 350px;
                 background-color: #fff;
                 border-radius: 20px;
                 margin:.6em auto ;
-                flex: 1 1 230px;
+                flex: 1 1 240px;
 
             @media (min-width: 600px) {
-                min-width: 290px;
+                min-width: 300px;
                 margin: 1em .6em;
             }  
             
@@ -563,8 +575,7 @@ body {
                     .new{
                         position: absolute;
                         top: 8%;
-                        left: 68%;
-                        width: fit-content;
+                        left: 70%;
                         background-color: $third-color;
                         color:darken($third-color,40);
                         padding:0.4em 0.8em 0.3em;
@@ -572,13 +583,7 @@ body {
                         box-shadow:8px 8px 10px -5px #000;
                         z-index: 2000;
 
-                        
-        
-                    @media (min-width: 600px) {
-                        font-size: 16px;
-         
-                        
-                    }
+                   
                     @media (min-width: 768px) {
                         font-size: 14px;
                         top: 8%;
@@ -601,6 +606,14 @@ body {
     
                     .img{
                         @include img;
+
+                    @media (min-width: 894px) {
+                        height:245px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        height:190px;
+                    }
 
                     }
                     

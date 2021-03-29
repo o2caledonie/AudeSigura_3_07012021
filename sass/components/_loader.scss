@@ -22,7 +22,7 @@
         width: 130px;
         height: 130px;
         animation: spin 2s linear infinite;
-        margin: -70px;
+        margin: -65px;
 
 
         @keyframes spin {
@@ -36,26 +36,27 @@
         }
     }
     
-    .fas {
+    .fa-utensils {
         display:block;
         position:absolute;
         top:50%;
         left:50%;
         font-size: 50px;
+        font-weight: 600;
         color: #fff;
-        margin:-25px;
+        margin:-25px -20px;
 
     }
 
-    // @keyframes hide {
-    //     0% {
-    //         visibility: visible;
-    //     }
+    @keyframes hide {
+        0% {
+            visibility: visible;
+        }
       
-    //     100% {
-    //         visibility: hidden;
-    //     }
-    // }
+        100% {
+            visibility: hidden;
+        }
+    }
 
 }
   
