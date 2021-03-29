@@ -164,6 +164,7 @@ main{
                         }
                     }
 
+                
                 @keyframes fadein{
                     0%{
                         opacity:0;
@@ -216,7 +217,6 @@ main{
 
                 @media (min-width: 1200px) {
 
-            
                     &:hover{
                         width:100%;
                         transform: none;
@@ -244,6 +244,10 @@ main{
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
+
+                            &:hover{
+                                white-space: normal;
+                            }
                         
                         
                         @media (min-width: 894px) {
@@ -265,6 +269,10 @@ main{
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
+
+                            &:hover{
+                                white-space: normal;
+                            }
                             
                         
                         

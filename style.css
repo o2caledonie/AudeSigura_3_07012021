@@ -1165,6 +1165,9 @@ main .menu-container .menu .dish .choices .item .item-details .item-title {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+main .menu-container .menu .dish .choices .item .item-details .item-title:hover {
+  white-space: normal;
+}
 @media (min-width: 894px) {
   main .menu-container .menu .dish .choices .item .item-details .item-title {
     font-size: 16px;
@@ -1179,6 +1182,9 @@ main .menu-container .menu .dish .choices .item .item-details .item-description 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+main .menu-container .menu .dish .choices .item .item-details .item-description:hover {
+  white-space: normal;
 }
 @media (min-width: 894px) {
   main .menu-container .menu .dish .choices .item .item-details .item-description {
