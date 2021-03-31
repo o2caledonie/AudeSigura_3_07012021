@@ -83,16 +83,18 @@ main{
             @include flex-wrap(space-between);
             align-items: baseline;
             width:100%;
-            max-width: 450px;
+            max-width: 350px;
+            padding-right: 1em;
 
         @media (min-width: 894px) {
+            max-width: 450px;
             margin: 0 15em;
             justify-content: space-evenly;
         }
 
             .name{
                 font-family: 'shrikhand', sans-serif;
-                font-size: 26px;
+                font-size: 27px;
                 font-weight: 500;
             }
         }

@@ -851,7 +851,8 @@ header {
 }
 
 .colored-btn {
-  display: block;
+  display: flex;
+  align-items: center;
   margin: 1em 2em 2.5em;
   height: 50px;
   border: none;
@@ -873,8 +874,8 @@ header {
 .colored-btn .button-text {
   color: #fff;
   padding: 1em;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 15px;
 }
 .colored-btn .button-text_order {
   margin: 2em;
@@ -995,17 +996,19 @@ main .menu-container .menu .restaurant {
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  max-width: 450px;
+  max-width: 350px;
+  padding-right: 1em;
 }
 @media (min-width: 894px) {
   main .menu-container .menu .restaurant {
+    max-width: 450px;
     margin: 0 15em;
     justify-content: space-evenly;
   }
 }
 main .menu-container .menu .restaurant .name {
   font-family: "shrikhand", sans-serif;
-  font-size: 26px;
+  font-size: 27px;
   font-weight: 500;
 }
 main .menu-container .menu .dish {
