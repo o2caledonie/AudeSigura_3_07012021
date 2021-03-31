@@ -890,6 +890,7 @@ header {
   position: relative;
   min-width: 28px;
   min-height: 28px;
+  cursor: pointer;
 }
 @media (min-width: 600px) {
   .like {

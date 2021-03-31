@@ -21,12 +21,10 @@ main{
     border-radius: 30px;
 }
 
-
     .img{
         @include img;
 
         @media (min-width: 1200px) {
-            
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
         }
@@ -34,322 +32,315 @@ main{
     }
 
 
-.menu-container{
+    .menu-container{
 
 
-    .menu{
-        position: relative;
-        background-color: lighten($grey,50);
-        padding: 2em 1em 1em;
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
-        width:100%;
-        height: max-content;
-        margin-top: -40px;
-        display: flex;
-        flex-direction: column;
-        z-index:2;
-
-    @media (min-width: 600px) {
-        align-items: center;
-        margin: 2.5em auto;
-        width: 90%;
-        max-width: 650px;
-        border-radius: 35px;
-    }
-
-    @media (min-width: 894px) {
-        border-radius:0;
-        margin:0;
-        width:100%;
-        max-width: none;
-        flex-flow: row wrap;
-        justify-content: center;
-
-        &--rest2{
-            .dish{
-                height:390px;
-            }
-        }
-    }
-
-    @media (min-width: 1200px) {
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-    }
-       
-
-        .restaurant{
-            @include flex-wrap(space-between);
-            align-items: baseline;
+        .menu{
+            position: relative;
+            background-color: lighten($grey,50);
+            padding: 2em 1em 1em;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
             width:100%;
-            max-width: 350px;
-            padding-right: 1em;
-
-        @media (min-width: 894px) {
-            max-width: 450px;
-            margin: 0 15em;
-            justify-content: space-evenly;
-        }
-
-            .name{
-                font-family: 'shrikhand', sans-serif;
-                font-size: 27px;
-                font-weight: 500;
-            }
-        }
-
-        .dish{
-            width: 100%;
-            padding:1.5em 0 .5em;
-            animation: fadein 1.5s backwards;
-            @for $i from 1 through $num-dish {
-                &--#{$i} {
-                    animation-delay: $anim-delay2 * $i;
-                }
-            }
-
-        @keyframes fadein{
-            0%{
-                opacity:0;
-            }
-            100%{
-                opacity:1;
-            }
-        }
+            height: max-content;
+            margin-top: -40px;
+            display: flex;
+            flex-direction: column;
+            z-index:2;
 
         @media (min-width: 600px) {
-            max-width: 500px;
-        } 
-
-        @media (min-width: 894px) {
-            display:flex;
-            flex-flow: column wrap;
-            width: 30%;
-            max-width: none;
-            margin: 0 .8em;
-            flex:1;
+            align-items: center;
+            margin: 2.5em auto;
+            width: 90%;
+            max-width: 650px;
+            border-radius: 35px;
         }
 
-            .dish-type{
-                font-size: 16px;
-                margin:0.5em 0 .5em; 
+        @media (min-width: 894px) {
+            border-radius:0;
+            margin:0;
+            width:100%;
+            max-width: none;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            &--rest2{
+                .dish{
+                    height:390px;
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        
+
+            .restaurant{
+                @include flex-wrap(space-between);
+                align-items: baseline;
+                width:100%;
+                max-width: 350px;
+                padding-right: 1em;
+
+            @media (min-width: 894px) {
+                max-width: 450px;
+                margin: 0 15em;
+                justify-content: space-evenly;
             }
 
-            .choices{
-                margin: 0;
-                padding:0;
-                width:100%;
+                .name{
+                    font-family: 'shrikhand', sans-serif;
+                    font-size: 27px;
+                    font-weight: 500;
+                }
+            }
 
-            
-                
+            .dish{
+                width: 100%;
+                padding:1.5em 0 .5em;
+                animation: fadein 1.5s backwards;
+                @for $i from 1 through $num-dish {
+                    &--#{$i} {
+                        animation-delay: $anim-delay2 * $i;
+                    }
+                }
 
-                .item{
-                    display:flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    @include shadow;
-                    height: 60px;
+            @keyframes fadein{
+                0%{
+                    opacity:0;
+                }
+                100%{
+                    opacity:1;
+                }
+            }
+
+            @media (min-width: 600px) {
+                max-width: 500px;
+            } 
+
+            @media (min-width: 894px) {
+                display:flex;
+                flex-flow: column wrap;
+                width: 30%;
+                max-width: none;
+                margin: 0 .8em;
+                flex:1;
+            }
+
+                .dish-type{
+                    font-size: 16px;
+                    margin:0.5em 0 .5em; 
+                }
+
+                .choices{
+                    margin: 0;
+                    padding:0;
                     width:100%;
-                    max-width: 600px;
-                    background-color: #fff;
-                    border-radius: 15px;
-                    margin-top:1em;
-                    border: none;
-                    padding: 0;
-                    cursor: pointer;
-                    overflow: hidden; 
-                    animation: fadein 1.5s backwards;
-                    @for $i from 1 through $num-item {
-                        &--#{$i} {
-                            animation-delay: $anim-delay1 * $i;
-                        }
-                    }
 
-                
-                @keyframes fadein{
-                    0%{
-                        opacity:0;
-                    }
-                    100%{
-                        opacity:1;
-                    }
-                }
-
-                @media (min-width: 894px) {
-                    width:100%;
-                    max-width: none;
-
-                    &:hover{
-                        width:400px;
-                        transition: 0.4s;
-                        transform: scale(1.1);
-                    }
-
-                    &--7:hover{
-                        transform: translateX(-8em)
-                    }
-
-                    &--8:hover{
-                        transform: translateX(-8em)
-                    }
-
-                    &--9:hover{
-                        transform: translateX(-8em)
-                    }
-                    
-                }
-
-                @media (min-width: 1024px) {
-
-            
-                    &--7:hover{
-                        transform: translateX(-5em);
-                    }
-
-                    &--8:hover{
-                        transform: translateX(-5em);
-                    }
-
-                    &--9:hover{
-                        transform: translateX(-5em);
-                    }
-                    
-                }
-
-                @media (min-width: 1200px) {
-
-                    &:hover{
+                    .item{
+                        display:flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        @include shadow;
+                        height: 60px;
                         width:100%;
-                        transform: none;
+                        max-width: 600px;
+                        background-color: #fff;
+                        border-radius: 15px;
+                        margin-top:1em;
+                        border: none;
+                        padding: 0;
+                        cursor: pointer;
+                        overflow: hidden; 
+                        animation: fadein 1.5s backwards;
+                        @for $i from 1 through $num-item {
+                            &--#{$i} {
+                                animation-delay: $anim-delay1 * $i;
+                            }
+                        }
+
+                    
+                    @keyframes fadein{
+                        0%{
+                            opacity:0;
+                        }
+                        100%{
+                            opacity:1;
+                        }
                     }
 
-                }   
+                    @media (min-width: 894px) {
+                        width:100%;
+                        max-width: none;
+
+                        &:hover{
+                            width:400px;
+                            transition: 0.4s;
+                            transform: scale(1.1);
+                        }
+
+                        &--7:hover{
+                            transform: translateX(-8em)
+                        }
+
+                        &--8:hover{
+                            transform: translateX(-8em)
+                        }
+
+                        &--9:hover{
+                            transform: translateX(-8em)
+                        }
+                        
+                    }
+
+                    @media (min-width: 1024px) {
+
                 
+                        &--7:hover{
+                            transform: translateX(-5em);
+                        }
 
-                    .item-details{
-                        display:block;
-                        text-align: left;
-                        overflow:hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        padding-left:.8em;
+                        &--8:hover{
+                            transform: translateX(-5em);
+                        }
 
-                  
+                        &--9:hover{
+                            transform: translateX(-5em);
+                        }
+                        
+                    }
 
-                        .item-title {
-                            font-size: 18px;
-                            font-weight: 800;
-                            margin:0;
-                            padding:0;
-                            color:#000;
-                            white-space: nowrap;
-                            overflow: hidden;
+                    @media (min-width: 1200px) {
+
+                        &:hover{
+                            width:100%;
+                            transform: none;
+                        }
+
+                    }   
+                    
+
+                        .item-details{
+                            display:block;
+                            text-align: left;
+                            overflow:hidden;
                             text-overflow: ellipsis;
-
-                            &:hover{
-                                white-space: normal;
-                            }
-                        
-                        
-                        @media (min-width: 894px) {
-                            font-size: 16px;
-                        }
-                        
-                        }
-                        
-                        .item-description{
-                            font-size: 16px;
-                            font-weight: 400;
-                            margin:0;
-                            padding:0;
-                            color: $grey;
                             white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
+                            padding-left:.8em;
 
-                            &:hover{
-                                white-space: normal;
+                    
+
+                            .item-title {
+                                font-size: 18px;
+                                font-weight: 800;
+                                margin:0;
+                                padding:0;
+                                color:#000;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                &:hover{
+                                    white-space: normal;
+                                }
+                            
+                            
+                            @media (min-width: 894px) {
+                                font-size: 16px;
                             }
                             
-                        
-                        
-                        @media (min-width: 894px) {
-                            font-size: 14px;
-                        }
-                        
-                        
-                        
-                        }
+                            }
                             
-                        }
+                            .item-description{
+                                font-size: 16px;
+                                font-weight: 400;
+                                margin:0;
+                                padding:0;
+                                color: $grey;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
 
-
-                    .slider{
-                        display: flex;
-                        height:100%;
-                        padding:0;
-                        margin-right:-60px;
-                        transition: .6s;
-                
-                        .price{
-                            font-size: 15px;
-                            font-weight: 600;
-                            background-color: #fff;
-                            padding:2.1em 1.2em 0em;
-                            width:55%;
-
-                        
-                        }
-
-                        .checkbox{
-                            height:100%;
-                            width:45%;
-                            padding:1.25em 1.1em;
-                            background-color: $third-color;
-                            text-align: center;
-                            border-top-right-radius: 15px;
-                            border-bottom-right-radius: 15px;
+                                &:hover{
+                                    white-space: normal;
+                                }
+                                
                             
-                            .fas{
-                                font-size: 20px;
-                                color: #fff;
-                                transition: transform .7s;
+                            
+                            @media (min-width: 894px) {
+                                font-size: 14px;
+                            }
+                            
+                            
+                            
+                            }
                                 
                             }
 
-                        }
 
-                    }
-
-                    &:hover .slider{
-                        margin-right:0px;
-
-            
-                        .fas{
-                            transform: rotate(360deg);
-                        }
+                        .slider{
+                            display: flex;
+                            height:100%;
+                            padding:0;
+                            margin-right:-60px;
+                            transition: .6s;
                     
+                            .price{
+                                font-size: 15px;
+                                font-weight: 600;
+                                background-color: #fff;
+                                padding:2.1em 1.2em 0em;
+                                width:55%;
+                            }
+
+                            .checkbox{
+                                height:100%;
+                                width:45%;
+                                padding:1.25em 1.1em;
+                                background-color: $third-color;
+                                text-align: center;
+                                border-top-right-radius: 15px;
+                                border-bottom-right-radius: 15px;
+                                
+                                .fas{
+                                    font-size: 20px;
+                                    color: #fff;
+                                    transition: transform .7s;
+                                }
+
+                            }
+
+                        }
+
+                        &:hover .slider{
+                            margin-right:0px;
+
+                            .fas{
+                                transform: rotate(360deg);
+                            }
+                        
+                        }
+
                     }
 
                 }
 
             }
 
-        }
+            .order {
+                margin-top: 2em;
+                text-align: center;
+                align-self: center;
 
-        .order {
-            margin-top: 2em;
-            text-align: center;
-            align-self: center;
+            @media (min-width: 1200px) {
+                margin: 1.5em 15em 0;
+            }
+            }
 
-        @media (min-width: 1200px) {
-            margin: 1.5em 15em 0;
-        }
         }
 
     }
-
-}
 
 }
