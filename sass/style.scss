@@ -31,9 +31,7 @@ main{
 
     }
 
-
     .menu-container{
-
 
         .menu{
             position: relative;
@@ -101,6 +99,7 @@ main{
                 }
         
                 }
+
             }
 
             .dish{
@@ -258,6 +257,7 @@ main{
                             @media (min-width: 894px) {
                                 font-size: 16px;
                             }
+
                             }
                             
                             .item-description{
@@ -274,18 +274,13 @@ main{
                                     white-space: normal;
                                 }
                                 
-                            
-                            
                             @media (min-width: 894px) {
                                 font-size: 14px;
                             }
                             
-                            
-                            
                             }
                                 
-                            }
-
+                        }    
 
                         .slider{
                             display: flex;
@@ -329,6 +324,7 @@ main{
                             }
                         
                         }
+
 
                     }
 
