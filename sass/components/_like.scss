@@ -1,8 +1,8 @@
 .like{
     margin:0 .5em;
     position:relative;
-    min-width: 28px;
-    min-height: 28px;
+    min-width: 26px;
+    min-height: 26px;
     cursor:pointer;
 
     @media (min-width: 600px) {
@@ -19,14 +19,13 @@
     .fas {
         background: linear-gradient($primary-color, $secondary-color);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
         clip-path: circle(0%);
         transition: all .8s;
     }
 
     .fa-heart{
-        font-size: 28px;
+        font-size: 26px;
         display: block;
         color: $grey;
 

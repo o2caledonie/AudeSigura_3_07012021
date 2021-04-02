@@ -259,6 +259,7 @@ header {
     border-radius: 30px;
     background-color: #fff;
     margin: 0 auto 1em;
+    cursor: pointer;
   }
 }
 @media (min-width: 1200px) {
@@ -888,8 +889,8 @@ header {
 .like {
   margin: 0 0.5em;
   position: relative;
-  min-width: 28px;
-  min-height: 28px;
+  min-width: 26px;
+  min-height: 26px;
   cursor: pointer;
 }
 @media (min-width: 600px) {
@@ -906,13 +907,12 @@ header {
 .like .fas {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   clip-path: circle(0%);
   transition: all 0.8s;
 }
 .like .fa-heart {
-  font-size: 28px;
+  font-size: 26px;
   display: block;
   color: #747373;
 }
@@ -994,12 +994,11 @@ main .menu-container .menu {
 }
 main .menu-container .menu .restaurant {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
   max-width: 350px;
-  padding-right: 1em;
 }
 @media (min-width: 894px) {
   main .menu-container .menu .restaurant {
@@ -1010,8 +1009,13 @@ main .menu-container .menu .restaurant {
 }
 main .menu-container .menu .restaurant .name {
   font-family: "shrikhand", sans-serif;
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 500;
+}
+@media (min-width: 600px) {
+  main .menu-container .menu .restaurant .name {
+    font-size: 28px;
+  }
 }
 main .menu-container .menu .dish {
   width: 100%;
@@ -1171,6 +1175,11 @@ main .menu-container .menu .dish .choices .item .item-details .item-title {
 }
 main .menu-container .menu .dish .choices .item .item-details .item-title:hover {
   white-space: normal;
+}
+@media (min-width: 600px) {
+  main .menu-container .menu .dish .choices .item .item-details .item-title:hover {
+    white-space: nowrap;
+  }
 }
 @media (min-width: 894px) {
   main .menu-container .menu .dish .choices .item .item-details .item-title {

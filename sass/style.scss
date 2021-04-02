@@ -78,11 +78,12 @@ main{
         
 
             .restaurant{
-                @include flex-wrap(space-between);
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
                 align-items: baseline;
                 width:100%;
                 max-width: 350px;
-                padding-right: 1em;
 
             @media (min-width: 894px) {
                 max-width: 450px;
@@ -92,8 +93,13 @@ main{
 
                 .name{
                     font-family: 'shrikhand', sans-serif;
-                    font-size: 27px;
+                    font-size: 25px;
                     font-weight: 500;
+                
+                @media (min-width: 600px) {
+                    font-size: 28px;
+                }
+        
                 }
             }
 
@@ -160,7 +166,6 @@ main{
                                 animation-delay: $anim-delay1 * $i;
                             }
                         }
-
                     
                     @keyframes fadein{
                         0%{
@@ -192,7 +197,6 @@ main{
                         &--9:hover{
                             transform: translateX(-8em)
                         }
-                        
                     }
 
                     @media (min-width: 1024px) {
@@ -230,8 +234,6 @@ main{
                             white-space: nowrap;
                             padding-left:.8em;
 
-                    
-
                             .item-title {
                                 font-size: 18px;
                                 font-weight: 800;
@@ -246,11 +248,16 @@ main{
                                     white-space: normal;
                                 }
                             
+                            @media (min-width: 600px) {
+
+                                &:hover{
+                                    white-space: nowrap;
+                                }
+                            }
                             
                             @media (min-width: 894px) {
                                 font-size: 16px;
                             }
-                            
                             }
                             
                             .item-description{
