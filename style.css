@@ -561,7 +561,7 @@ header {
   background: #e4d5f6;
   box-shadow: 3px 3px 15px -1px #747373;
 }
-#functioning .box-container .box:hover:hover .fas {
+#functioning .box-container .box:hover:hover .box-icon {
   color: #9356DC;
 }
 #functioning .box-container .box .step-number {
@@ -601,7 +601,7 @@ header {
     padding: 0 1.5em;
   }
 }
-#functioning .box-container .box .icon .fas {
+#functioning .box-container .box .icon .box-icon {
   color: #747373;
   font-size: 1.1em;
 }

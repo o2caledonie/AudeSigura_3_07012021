@@ -358,7 +358,7 @@ body {
                         background: lighten($primary-color, 30);
                         @include shadow(-1px);
     
-                        &:hover .fas{
+                        &:hover .box-icon{
                             color: $primary-color;
                         }
                     }
@@ -398,7 +398,7 @@ body {
                         padding: 0 1.5em;
                     }
 
-                        .fas {
+                        .box-icon {
                             color: $grey;
                             font-size: 1.1em;
                         }
